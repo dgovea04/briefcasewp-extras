@@ -16,7 +16,7 @@ $bewia_test_wc        = null;
 $bewia_test_terms     = array();
 
 function sanitize_key( $value ) {
-	return strtolower( preg_replace( '/[^a-z0-9_-]/', '', (string) $value ) );
+	return preg_replace( '/[^a-z0-9_-]/', '', strtolower( (string) $value ) );
 }
 
 function sanitize_text_field( $value ) {
@@ -157,6 +157,8 @@ bewia_assert_same( 'mobile', $context['device_type'], 'Mobile state is represent
 bewia_assert_same( 'US', $context['location_country'], 'Country is normalized to its coarse ISO code.' );
 bewia_assert_same( 87, $context['scroll_depth'], 'Scroll depth is bounded to an integer percentage.' );
 bewia_assert_same( 360, $context['checkout_elapsed_seconds'], 'Elapsed time is derived server-side from a valid start time.' );
+$context = ( new BEWIA_AI_Upsell_Engine() )->get_cart_context( array(), 1000 );
+bewia_assert_same( 360, $context['checkout_elapsed_seconds'], 'A persisted checkout start time remains available without client signals.' );
 
 bewia_reset_context();
 $context = ( new BEWIA_AI_Upsell_Engine() )->get_cart_context( array( 'scroll_depth' => '-5', 'checkout_started_at' => 'not-a-time' ), 1000 );

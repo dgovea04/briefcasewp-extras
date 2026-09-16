@@ -102,12 +102,6 @@ class BEWIA_AI_Upsell_Engine {
 		$cart_items            = $wc->cart->get_cart();
 		$category_ids          = array();
 
-		if ( empty( $cart_items ) || ! is_array( $cart_items ) ) {
-			return $context;
-		}
-
-		foreach ( $cart_items as $cart_item ) {
-			if ( empty( $cart_item['product_id'] ) ) {
 		if ( method_exists( $wc->cart, 'get_applied_coupons' ) ) {
 			$context['coupon_codes'] = self::normalize_coupon_codes( $wc->cart->get_applied_coupons() );
 		}
@@ -126,6 +120,12 @@ class BEWIA_AI_Upsell_Engine {
 			$context['checkout_elapsed_seconds'] = max( 0, $current_timestamp - $checkout_started_at );
 		}
 
+		if ( empty( $cart_items ) || ! is_array( $cart_items ) ) {
+			return $context;
+		}
+
+		foreach ( $cart_items as $cart_item ) {
+			if ( empty( $cart_item['product_id'] ) ) {
 				continue;
 			}
 
