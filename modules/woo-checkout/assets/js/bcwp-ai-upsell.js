@@ -7,6 +7,8 @@ jQuery(function ($) {
 
 	var ajaxUrl = BEWIAUpsell.ajax_url || BEWIAUpsell.ajaxurl;
 
+	var checkoutStartedAt = Math.floor(Date.now() / 1000);
+	var maxScrollDepth = 0;
 	var selectors = {
 		widget: '.bewia-ai-smart-wrapper',
 		list: '.bewia-ai-smart-upsells__list',
@@ -31,6 +33,16 @@ jQuery(function ($) {
 	}
 
 	function storeSettings($widget, settings) {
+
+	function getScrollDepth() {
+		var documentHeight = Math.max($(document).height(), 1);
+		var viewportBottom = $(window).scrollTop() + $(window).height();
+		var depth = Math.floor((viewportBottom / documentHeight) * 100);
+
+		maxScrollDepth = Math.max(maxScrollDepth, Math.min(100, Math.max(0, depth)));
+
+		return maxScrollDepth;
+	}
 		$widget.attr('data-settings', JSON.stringify(settings || {}));
 	}
 
@@ -208,7 +220,9 @@ jQuery(function ($) {
 		$.post(ajaxUrl, {
 			action: 'bcwp_get_ai_upsell',
 			nonce: BEWIAUpsell.nonce,
-			settings: settings
+			settings: settings,
+			scroll_depth: getScrollDepth(),
+			checkout_started_at: checkoutStartedAt
 		}).done(function (response) {
 			if (response && response.success && response.data && response.data.product) {
 				if (response.data.provider_source) {
