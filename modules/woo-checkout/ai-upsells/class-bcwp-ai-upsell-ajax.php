@@ -30,7 +30,7 @@ class BEWIA_AI_Upsell_Ajax {
 			);
 		}
 
-		$settings = $this->bewia_get_settings_from_post();
+		$settings = $this->bewia_get_server_settings_for_request();
 		$settings['suppressed_product_ids'] = array_values( array_unique( array_merge( $settings['suppressed_product_ids'], $this->bewia_get_suppressed_product_ids() ) ) );
 		$engine   = new BEWIA_AI_Upsell_Engine();
 		$product  = $engine->get_best_upsell( $settings, $this->bewia_get_frontend_signals_from_post() );
@@ -227,6 +227,23 @@ class BEWIA_AI_Upsell_Ajax {
 		$settings = BEWIA_AI_Upsell_Engine::normalize_settings( $raw_settings );
 		$variant = BEWIA_AI_Upsell_Experiments::assign_variant( $settings['campaign_key'], '', $settings['variants'] );
 		return $this->bewia_apply_variant( $settings, $variant );
+	}
+
+	/**
+	 * Resolve offer eligibility from trusted configuration, never from mutable POST data.
+	 * Presentation/context settings may still come from the widget request.
+	 */
+	private function bewia_get_server_settings_for_request() {
+		$posted = $this->bewia_get_settings_from_post();
+		$server = class_exists( __NAMESPACE__ . '\BEWIA_AI_Upsell_Analytics' ) ? BEWIA_AI_Upsell_Analytics::get_saved_settings() : array();
+		$server = BEWIA_AI_Upsell_Engine::normalize_settings( is_array( $server ) ? $server : array() );
+
+		foreach ( array( 'enable_ai', 'mode', 'layout', 'required_cart_category_ids', 'exclude_cart_products', 'minimum_cart_total', 'maximum_cart_total', 'customer_status', 'device_type', 'maximum_product_price_ratio', 'priority_scores', 'show_dismiss', 'success_message', 'collapse_delay_ms', 'fallback_title', 'fallback_description', 'button_text', 'provider_source' ) as $key ) {
+			if ( array_key_exists( $key, $posted ) ) { $server[ $key ] = $posted[ $key ]; }
+		}
+
+		$variant = BEWIA_AI_Upsell_Experiments::assign_variant( $server['campaign_key'], '', $server['variants'] );
+		return $this->bewia_apply_variant( $server, $variant );
 	}
 
 	private function bewia_get_frontend_signals_from_post() {

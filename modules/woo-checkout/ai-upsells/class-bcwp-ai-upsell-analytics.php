@@ -848,9 +848,13 @@ class BEWIA_AI_Upsell_Analytics {
 
 		$accepted = isset( $_POST['bewia_ai_upsell_offers'] ) ? wp_unslash( $_POST['bewia_ai_upsell_offers'] ) : array();
 		$accepted = is_array( $accepted ) ? array_map( array( __CLASS__, 'normalize_offer_identity' ), $accepted ) : array();
-		if ( empty( $accepted ) && isset( $_POST['bewia_ai_upsell_ids'] ) ) {
-			$accepted = array_map( function( $id ) { return self::normalize_offer_identity( array( 'product_id' => $id ) ); }, explode( ',', sanitize_text_field( wp_unslash( $_POST['bewia_ai_upsell_ids'] ) ) ) );
+		if ( isset( $_POST['bewia_ai_upsell_ids'] ) ) {
+			$legacy = array_map( function( $id ) { return self::normalize_offer_identity( array( 'product_id' => $id ) ); }, explode( ',', sanitize_text_field( wp_unslash( $_POST['bewia_ai_upsell_ids'] ) ) ) );
+			$accepted = array_merge( $accepted, $legacy );
 		}
+		$unique = array();
+		foreach ( $accepted as $offer ) { $unique[ self::build_attribution_match( $offer ) ] = $offer; }
+		$accepted = array_values( $unique );
 		if ( ! empty( $accepted ) ) { $order->update_meta_data( '_bewia_ai_smart_upsells', wp_json_encode( $accepted ) ); }
 		$order->save();
 	}
@@ -882,22 +886,24 @@ class BEWIA_AI_Upsell_Analytics {
 	public function confirm_order_revenue( $order_id, $order = null ) {
 		$order = $order ? $order : ( function_exists( 'wc_get_order' ) ? wc_get_order( $order_id ) : false );
 		if ( ! $order || ! self::is_confirmable_order_status( $order->get_status() ) || $order->get_meta( '_bewia_ai_revenue_confirmed' ) ) { return false; }
+		$updated = 0;
 		foreach ( $order->get_items() as $item ) {
 			$raw = $item->get_meta( '_bewia_offer_identity' );
 			$identity = json_decode( (string) $raw, true );
 			if ( ! is_array( $identity ) ) { continue; }
 			$identity = self::normalize_offer_identity( $identity );
-			$this->update_confirmed_revenue( $order_id, $identity, (float) $item->get_total() );
+			if ( $this->update_confirmed_revenue( $order_id, $identity, (float) $item->get_total() ) ) { $updated++; }
 		}
+		if ( 0 === $updated ) { return false; }
 		$order->update_meta_data( '_bewia_ai_revenue_confirmed', 'yes' ); $order->save();
-		return true;
+		return $updated;
 	}
 
 	private function update_confirmed_revenue( $order_id, $identity, $revenue ) {
 		global $wpdb; if ( ! self::ensure_table() ) { return false; }
 		$row = $wpdb->get_row( $wpdb->prepare( "SELECT id FROM " . self::get_table_name() . " WHERE event=%s AND product_id=%d AND session_id=%s AND campaign_key=%s AND variant_id=%s AND offer_id=%s AND order_id IS NULL ORDER BY id DESC LIMIT 1", 'accepted', $identity['product_id'], $identity['session_id'], $identity['campaign_key'], $identity['variant_id'], $identity['offer_id'] ), ARRAY_A );
 		if ( empty( $row ) ) { return false; }
-		return false !== $wpdb->update( self::get_table_name(), array( 'revenue' => round( max( 0, $revenue ), 2 ), 'order_id' => absint( $order_id ) ), array( 'id' => absint( $row['id'] ) ), array( '%f', '%d' ), array( '%d' ) );
+		return (int) $wpdb->update( self::get_table_name(), array( 'revenue' => round( max( 0, $revenue ), 2 ), 'order_id' => absint( $order_id ) ), array( 'id' => absint( $row['id'] ) ), array( '%f', '%d' ), array( '%d' ) ) > 0;
 	}
 
 	public static function get_session_id() {
