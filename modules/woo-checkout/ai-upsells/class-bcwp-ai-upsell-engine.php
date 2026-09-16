@@ -18,6 +18,9 @@ class BEWIA_AI_Upsell_Engine {
 		$normalized = array(
 			'enable_ai'                   => ( isset( $settings['enable_ai'] ) && 'yes' === $settings['enable_ai'] ) ? 'yes' : '',
 			'mode'                        => isset( $settings['mode'] ) ? sanitize_key( (string) $settings['mode'] ) : 'rules',
+			'ai_endpoint'                 => isset( $settings['ai_endpoint'] ) ? esc_url_raw( $settings['ai_endpoint'] ) : '',
+			'ai_model'                    => isset( $settings['ai_model'] ) ? sanitize_text_field( (string) $settings['ai_model'] ) : '',
+			'ai_timeout'                  => isset( $settings['ai_timeout'] ) ? max( 1, min( 10, absint( $settings['ai_timeout'] ) ) ) : 5,
 			'layout'                      => isset( $settings['layout'] ) ? sanitize_key( (string) $settings['layout'] ) : 'card',
 			'candidate_product_ids'       => array(),
 			'required_cart_category_ids'  => array(),
@@ -296,6 +299,7 @@ class BEWIA_AI_Upsell_Engine {
 		$results = $provider->get_recommendations( $settings, $context, $limit );
 
 		if ( ! empty( $results ) ) {
+			$results = $this->hydrate_provider_results( $results );
 			$this->last_provider_source = isset( $settings['mode'] ) ? sanitize_key( (string) $settings['mode'] ) : 'rules';
 			return $results;
 		}
@@ -310,6 +314,16 @@ class BEWIA_AI_Upsell_Engine {
 		}
 
 		return array();
+	}
+
+	protected function hydrate_provider_results( $results ) {
+		$products = array();
+		foreach ( (array) $results as $result ) {
+			$product_id = is_array( $result ) && isset( $result['product_id'] ) ? absint( $result['product_id'] ) : 0;
+			$product = $product_id > 0 ? wc_get_product( $product_id ) : ( is_object( $result ) ? $result : null );
+			if ( $product && is_object( $product ) ) { $products[] = $product; }
+		}
+		return $products;
 	}
 
 	public function get_last_provider_source() {
