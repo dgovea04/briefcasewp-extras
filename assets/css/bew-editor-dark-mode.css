@@ -1,0 +1,13 @@
+#bew-template-library-modal .dialog-widget-content {    background-color: #34383c !important;}#bew-template-library-modal .dialog-widget-header, #bew-template-library-modal .dialog-header {    background-color: #26292c !important;}#bew-template-library-tabs-items .elementor-template-library-menu-item:hover span, #bew-template-library-tabs-items .elementor-template-library-menu-item input:checked + span {    background-image: -o-linear-gradient(top,#26292c,#34383c) !important;    background-image: -webkit-gradient(linear,left top,left bottom,from(#26292c),to(#34383c)) !important;    background-image: linear-gradient(180deg,#26292c,#34383c) !important;}
+
+#bew-template-library-tabs-items .elementor-template-library-menu-item {
+    color: #e0e1e3 !important;
+}
+
+#bew-template-library-tabs-items .elementor-template-library-menu-item:hover span, #bew-template-library-tabs-items .elementor-template-library-menu-item input:checked + span {
+    border-bottom: 3px solid #71d7f7 !important;
+}
+
+#bew-template-library-content .bew-template-library-filter-label:hover span, #bew-template-library-content .bew-template-library-filter-label input:checked + span {
+    color: #71d7f7 !important;
+}

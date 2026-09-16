@@ -1,0 +1,1 @@
+<img class="bew-template-preview-img">

@@ -1,0 +1,322 @@
+.elementor-panel .elementor-choices.elementor-choices-imagery {
+    display: block;
+    height: auto;
+    background-color: transparent;
+}
+
+.elementor-panel .elementor-choices.elementor-choices-imagery .elementor-choices-label:nth-of-type(odd) {
+    margin-right: 4%;
+}
+
+.elementor-panel .elementor-choices input:checked+.elementor-choices-label {
+    color: #fff;
+}
+
+.elementor-panel .elementor-choices.elementor-choices-imagery .elementor-choices-label {
+    display: inline-block;
+    float: left;
+    width: 48% !important;
+    margin: 4px 0;
+    border-radius: 3px;
+    border: 1px solid #ff9a00;
+    padding: 3px;   
+    transition: all .2s ease;
+	background-color: #fff;
+}
+
+.elementor-panel .elementor-choices.elementor-choices-imagery input:not(:checked)+.elementor-choices-label {
+    border-color: #f1f2f3;
+    box-shadow: none;
+}
+
+#elementor-template-library-order-toolbar-bewtemplates, .elementor-template-library-template-bewtemplates {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px;
+    text-align: left;
+}
+
+.elementor-template-library-template-bewtemplates {   
+    width: 100%;
+    margin-top: 1px;
+    background-color: #fff;
+    -webkit-transition: background-color .3s linear;
+    -o-transition: background-color .3s linear;
+    transition: background-color .3s linear;
+}
+
+#elementor-template-library-templates-container {
+      flex-wrap: wrap;      
+}
+
+.elementor-template-library-template.elementor-template-library-template-bewtemplates {
+      flex-direction: column;
+      height: auto;
+      max-width: calc(25% - 30px);
+      margin:15px;
+}
+
+.elementor-template-library-template.elementor-template-library-template-bewtemplates > * {
+      width: 176px;
+	  height:auto;
+      padding: 0
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-name {
+    text-align: left;
+    color: #6d7882;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    padding-right: 5px;
+	font-size: 11px;
+    line-height: 18px;
+	margin-top:5px;
+	margin-bottom:2px;
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-type {
+	display:none;	
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-author {
+	display:none;	
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-date {
+	display:none;	
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-preview {
+	display:inline-block;
+	width:50%;
+	font-size: 11px;
+    line-height: 1;
+	text-transform: none;
+	color: #a4afb7;
+	cursor: pointer;
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-preview:hover {	
+	color:#6d7882
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-insert.elementor-button {
+	background:none;
+	color: #a4afb7;
+	padding: 3px 6px;
+	font-size: 11px;
+    line-height: 1;
+	text-transform: none;
+	float: right;
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-insert.elementor-button:hover {
+	background:#39b54a;
+	color: #ffffff;
+	padding: 3px 6px;
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-more-toggle {
+	display:none;	
+}
+	
+.elementor-template-library-template-bewtemplates .elementor-template-library-template-more {
+	display:none;	
+}
+
+.elementor-template-library-template-local .elementor-template-library-template-bew-activate {
+	display:none;	
+}	
+	
+.elementor-template-library-template-bewtemplates:not(:hover) .bew-button-activate  {
+    display: none;
+}
+
+.elementor-template-library-template-bewtemplates .bew-button-activate {
+    color: #fcb92c;
+	font-size: 11px;
+	background-color: transparent;
+    text-transform: none;
+}
+
+.elementor-template-library-template-bewtemplates .bew-button-activate  i{
+    margin-right: 0;
+}
+
+.elementor-template-library-template-bewtemplates:hover .elementor-template-library-local-column-5{
+    display: none;
+}
+
+.briefcasewp-active .elementor-template-library-template-bewtemplates  .elementor-template-library-template-bew-activate {
+	display: none;
+}
+
+.briefcasewp-active .elementor-template-library-template-bewtemplates  .elementor-template-library-local-column-5 {
+	display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay.show {
+  visibility: visible;
+  opacity: 1;
+  z-index:99;
+}
+
+.popup {
+  margin: 10% auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 3s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #b4b9be;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.modal-header h4{
+	margin: 20px 20px 0px;
+	font-size: 16px;
+	 text-align: center;
+}
+
+.modal-body {
+ margin: 10px 20px 20px;
+ text-align: center;	
+}
+
+.modal-body input[type=text], input[type=password] {
+    height: 36px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    border-radius: 3px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.modal-body .button-primary {
+	height: 36px;
+    font-size: 14px;
+	
+}
+
+.modal-body #no-right {
+	margin:0;
+	color:red;
+}
+
+.modal-body span {    
+    font-size: 14px;
+	margin: 20px 25px;
+    display: block;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+.confirm_account {
+	width:410px;
+	margin: 0 auto 60px;
+	border: 1px solid #d9d9d9;
+}
+
+.confirm_account .header h4{	
+	margin: 40px 20px 0px;
+	font-size: 16px;
+}
+
+.confirm_account .modal-body {
+ margin: 10px 20px 30px;
+ text-align: center;	
+}
+
+
+#popup_confirm .link_confirm {
+font-size: 16px;
+}
+
+.elementor-template-library-template-insert:not(.elementor-template-library-pro-template) {
+cursor: pointer;
+}
+
+.elementor-control-section_bew_sticky:after, .elementor-control-section_bew_effects:after, .elementor-control-section_bew_scroll:after,
+.elementor-control-section_bew_mobile_first:after, .elementor-control-section_bew_mobile_first_style:after, .elementor-control-section_bew_cart:after, .elementor-control-section_bew_checkout:after,
+.elementor-control-section_bew_thankyou:after, .elementor-control-section_bew_account:after, .elementor-control-section_bew_single:after {
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 10px;
+    right: 15px;
+    background-image: url(../img/bew-logo.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,652 @@
+{
+    "templates": [
+		{
+			"template_id": "standard-single-product",
+			"type":"bew_block",
+			"subtype": "single product",
+			"title": "Bew Standard Single Product",
+            "categories": [
+                "single-product"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/product/slim-sateen-shirt-and-rose-pink-tie-save/",
+			"favorite":0,
+			"download" : "10538"
+		},
+		{
+			"template_id": "line-single-product",
+			"type":"bew_block",
+			"subtype": "single product",
+			"title": "Bew Line Single Product",	
+            "categories": [
+                "single-product"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/product/skinny-blazer-in-burgundy-wool-mix-check/",
+			"favorite":0,
+			"download" : "10541"
+		},
+		{
+			"template_id": "box-single-product",
+			"type":"bew_block",
+			"subtype": "single product",
+			"title": "Bew Box Single Product",
+            "categories": [
+                "single-product"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/product/tassel-loafers/",
+			"favorite":0,
+			"download" : "10544"
+		},
+		{
+			"template_id": "minimalism-single-product",
+			"type":"bew_block",
+			"subtype": "single product",
+			"title": "Bew Minimalism Single Product",
+            "categories": [
+                "single-product"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/product/skinny-blazer-in-black-velvet/",
+			"favorite":0,
+			"download" : "10547"			
+		},
+		{
+			"template_id": "left-single-product",
+			"type":"bew_block",
+			"subtype": "single product",
+			"title": "Bew Left Single Product",	
+            "categories": [
+                "single-product"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/product/super-skinny-fit-suit-in-black/",
+			"favorite":0,
+			"download" : "10550"
+		},
+		{
+			"template_id": "background-single-product",
+			"type":"bew_block",
+			"subtype": "single product",
+			"title": "Bew Background Single Product",
+            "categories": [
+                "single-product"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/product/chelsea-boots/",
+			"favorite":0,
+			"download" : "10553"
+		},
+		{
+			"template_id": "sticky-single-product",
+			"type":"bew_block",
+			"subtype": "single product",
+			"title": "Bew Sticky Single Product",
+            "categories": [
+                "single-product"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/product/ted-baker-straw-fedora-hat/",
+			"favorite":0,
+			"download" : "10556"
+		},
+		{
+			"template_id": "sticky-right-single-product",
+			"type":"bew_block",
+			"subtype": "single product",
+			"title": "Bew Right Sticky Single Product",	
+            "categories": [
+                "single-product"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/product/mariner-cap-in-black/",
+			"favorite":0,
+			"download" : "10559"
+		},
+		{
+			"template_id": "cart",
+			"type":"bew_block",
+			"subtype": "bew cart",
+			"title": "Bew Cart",
+            "categories": [
+                "bew-cart"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://clothesncoffee.com/cart/?add-to-cart=2140",
+			"favorite":0,
+			"download" : "10571"
+		},
+		{
+			"template_id": "checkout",
+			"type":"bew_block",
+			"subtype": "bew checkout",
+			"title": "Bew Checkout",
+            "categories": [
+                "bew-checkout"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://clothesncoffee.com/checkout-preview/",
+			"favorite":0,
+			"download" : "10576"
+		},
+		{
+			"template_id": "thankyou",
+			"type":"bew_block",
+			"subtype": "briefcasewp",
+			"title": "Bew Thankyou",
+            "categories": [
+                "bew-thankyou"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://clothesncoffee.com/thankyou-preview/",
+			"favorite":0,
+			"download" : "10579"
+		},
+		{
+			"template_id": "empty-cart",
+			"type":"bew_block",
+			"subtype": "briefcasewp",
+			"title": "Bew Empty Cart",
+            "categories": [
+                "bew-empty"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://clothesncoffee.com/cart",
+			"favorite":0,
+			"download" : "10582"
+		},
+		{
+			"template_id": "standard-cart",
+			"type":"bew_block",
+			"subtype": "bew cart",
+			"title": "Bew Standard Cart",
+            "categories": [
+                "bew-cart"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/coffee/cart/?add-to-cart=14",
+			"favorite":0,
+			"download" : "10585"
+		},
+		{
+			"template_id": "standard-checkout",
+			"type":"bew_block",
+			"subtype": "bew checkout",
+			"title": "Bew Standard Checkout",
+            "categories": [
+                "bew-checkout"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/coffee/checkout-preview/",
+			"favorite":0,
+			"download" : "10588"
+		},
+		{
+			"template_id": "standard-account",
+			"type":"bew_block",
+			"subtype": "briefcasewp",
+			"title": "Bew Standard Account",
+            "categories": [
+                "bew-account"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/coffee/my-account/",
+			"favorite":0,
+			"download" : "10591"
+		},
+		{
+			"template_id": "minimalism-cart",
+			"type":"bew_block",
+			"subtype": "bew cart",
+			"title": "Bew Minimalism Cart",
+            "categories": [
+                "bew-cart"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/modern/cart/?add-to-cart=272",
+			"favorite":0,
+			"download" : "10594"
+		},
+		{
+			"template_id": "minimalism-checkout",
+			"type":"bew_block",
+			"subtype": "bew checkout",
+			"title": "Bew Minimalism Checkout",
+            "categories": [
+                "bew-checkout"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/modern/checkout-preview/",
+			"favorite":0,
+			"download" : "10598"
+		},
+		{
+			"template_id": "multistep-cart",
+			"type":"bew_block",
+			"subtype": "bew cart",
+			"title": "Bew Multistep Cart",
+            "categories": [
+                "bew-cart"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/cart/?add-to-cart=8",
+			"favorite":0,
+			"download" : "10601"
+		},
+		{
+			"template_id": "multistep-checkout",
+			"type":"bew_block",
+			"subtype": "bew checkout",
+			"title": "Bew Multistep Checkout",
+            "categories": [
+                "bew-checkout"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/checkout-multistep-preview/",
+			"favorite":0,
+			"download" : "10604"
+		},
+		{
+			"template_id": "multistep-thankyou",
+			"type":"bew_block",
+			"subtype": "briefcasewp",
+			"title": "Bew Multistep Thankyou",
+            "categories": [
+                "bew-thankyou"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/checkout-thankyou-preview/",
+			"favorite":0,
+			"download" : "10608"
+		},
+		{
+			"template_id": "multistep-account",
+			"type":"bew_block",
+			"subtype": "briefcasewp",
+			"title": "Bew Multistep Account",
+            "categories": [
+                "bew-account"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/account-preview",
+			"favorite":0,
+			"download" : "10611"
+		},
+		{
+			"template_id": "multistep-login",
+			"type":"bew_block",
+			"subtype": "briefcasewp",
+			"title": "Bew Multistep Login",
+            "categories": [
+                "bew-login"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/login-preview",
+			"favorite":0,
+			"download" : "10876"
+		},
+		{
+			"template_id": "multistep-register",
+			"type":"bew_block",
+			"subtype": "briefcasewp",
+			"title": "Bew Multistep Register",
+            "categories": [
+                "bew-register"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/register-preview",
+			"favorite":0,
+			"download" : "10879"
+		},
+		{
+			"template_id": "clean-cart",
+			"type":"bew_block",
+			"subtype": "bew cart",
+			"title": "Bew Clean Cart",
+            "categories": [
+                "bew-cart"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/clean/cart/?add-to-cart=8",
+			"favorite":0,
+			"download" : "10615"
+		},
+		{
+			"template_id": "shopify-cart",
+			"type":"bew_block",
+			"subtype": "bew cart",
+			"title": "Bew Shopify Cart",
+            "categories": [
+                "bew-cart"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/shopify/cart/?add-to-cart=13",
+			"favorite":0,
+			"download" : "10831"
+		},
+		{
+			"template_id": "shopify-checkout",
+			"type":"bew_block",
+			"subtype": "bew checkout",
+			"title": "Bew Shopify Checkout",
+            "categories": [
+                "bew-checkout"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/shopify/checkout-shopify-preview",
+			"favorite":0,
+			"download" : "10834"
+		},
+		{
+			"template_id": "shopify-login",
+			"type":"bew_block",
+			"subtype": "briefcasewp",
+			"title": "Bew Shopify Login",
+            "categories": [
+                "bew-login"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/shopify/login-preview",
+			"favorite":0,
+			"download" : "10859"
+		}
+    ]
+}

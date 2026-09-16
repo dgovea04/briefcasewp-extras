@@ -1,0 +1,14 @@
+{
+	"success":true,
+    "terms": {
+		"single-product": "Single Product",		
+        "bew-cart": "Cart",
+		"bew-empty": "Empty Cart",	
+        "bew-checkout": "Checkout",
+        "bew-thankyou": "Thankyou",
+        "bew-account": "Account",
+        "bew-login": "Login",
+        "bew-register": "Register"			
+    } 
+}
+

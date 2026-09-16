@@ -1,0 +1,220 @@
+{
+    "templates": [
+	{
+			"template_id": "coffee-homepage",
+			"type":"bew_page",
+			"subtype": "page",
+			"title": "Bew Coffee Homepage",
+            "categories": [
+                "home"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/coffee/",
+			"favorite":0,
+			"download" : "10520"
+		},
+		{
+			"template_id": "minimalism-a-homepage",
+			"type":"bew_page",
+			"subtype": "page",
+			"title": "Bew Minimalism A Homepage",
+            "categories": [
+                "home"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/",
+			"favorite":0,
+			"download" : "10523"			
+		},
+		{
+			"template_id": "minimalism-b-homepage",
+			"type":"bew_page",
+			"subtype": "page",
+			"title": "Bew Minimalism B Homepage",
+            "categories": [
+                "home"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/home-b/",
+			"favorite":0,
+			"download" : "10526"
+		},
+		{
+			"template_id": "minimalism-c-homepage",
+			"type":"bew_page",
+			"subtype": "page",
+			"title": "Bew Minimalism C Homepage",
+            "categories": [
+                "home"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/home-c/",
+			"favorite":0,
+			"download" : "10529"
+		},
+		{
+			"template_id": "black-homepage",
+			"type":"bew_page",
+			"subtype": "page",
+			"title": "Bew Black Homepage",
+            "categories": [
+                "home"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/black",
+			"favorite":0,
+			"download" : "10532"
+		},
+		{
+			"template_id": "single-homepage",
+			"type":"bew_page",
+			"subtype": "page",
+			"title": "Bew Single Homepage",	
+            "categories": [
+                "home"
+            ],
+            "keywords": [
+                "travel"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/single/",
+			"favorite":0,
+			"download" : "10535"
+		},
+		{
+			"template_id": "minimalism-shop-page",
+			"type":"bew_page",
+			"subtype": "product archive",
+			"title": "Minimalism Shop Page",
+            "categories": [
+                "shop"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/blocks/shop/",
+			"favorite":0,
+			"download" : "10562"
+		},
+		{
+			"template_id": "coffee-shop-page",
+			"type":"bew_page",
+			"subtype": "product archive",
+			"title": "Coffee Shop Page",
+            "categories": [
+                "shop"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://demo.briefcasewp.com/coffee/shop/",
+			"favorite":0,
+			"download" : "10565"
+		},
+		{
+			"template_id": "whatsapp-order",
+			"type":"bew_page",
+			"subtype": "briefcasewp",
+			"title": "Bew WhatsApp Order",
+            "categories": [
+                "shop"
+            ],
+            "keywords": [
+                "fashion"
+            ],			
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"tags":[],
+			"isPro":0,
+			"accessLevel":0,
+			"popularityIndex":1,
+			"trendIndex":1,
+			"hasPageSettings":0,			
+			"url": "https://clothesncoffee.com/whatsapp-order/",
+			"favorite":0,
+			"download" : "10568"
+		}
+    ]
+}

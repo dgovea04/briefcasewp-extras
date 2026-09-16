@@ -1,0 +1,4217 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Briefcasewp Extras\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-15 02:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.4; wp-5.8.1\n"
+"X-Domain: bew-extras"
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:585
+msgid " Before Login Text"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:591
+msgid " Description Color"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:603
+msgid " Radio Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:675
+msgid " Required Error Text"
+msgstr ""
+
+#: includes/bew-woo-templates/bew-cart-table.php:30
+#, php-format
+msgid "%1$s <span>(%2$s item)</span>"
+msgid_plural "%1$s <span>(%2$s items)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1248
+msgid "(-/+) Box Height"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1229
+msgid "(-/+) Box Width"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:34
+msgid "100+"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:98
+msgid "12"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-11.php:31
+msgid "5 Ready Samples"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-11.php:36
+msgid "6 Header Types"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:66
+msgid "6.7x"
+msgstr ""
+
+#: extensions/bew-extensions/extensions/inside/bew-gallery-video/inc/admin/admin.php:24
+msgid ""
+"<b>Warning</b> : Install/Activate Woocommerce to activate \"Bew Gallery "
+"Video\" extension."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:71
+msgid "Accesories"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-address.php:27
+msgid "Account Address"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-content.php:26
+msgid "Account Content"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-dashboard.php:26
+msgid "Account Dashboard"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-account.php:26
+msgid "Account Details"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:26
+msgid "Account Downloads"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-extra-endpoint.php:26
+msgid "Account Extra Endpoint"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-login.php:26
+msgid "Account Login"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-logout.php:26
+msgid "Account Logout"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:26
+#: modules/woo-account/widgets/woo-navigation.php:50
+msgid "Account Navigation"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-orders.php:26
+msgid "Account orders"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-register.php:26
+msgid "Account Register"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-orders.php:344
+msgid "Actions"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:239
+msgid "Active"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:111
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:695
+msgid "Active Color"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:102
+msgid "Add new category"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:146
+msgid "Additional Fields"
+msgstr ""
+
+#: modules/bew-scroll/module.php:81
+msgid "Adjust Height"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:98
+msgid "After Text"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:265
+msgid ""
+"After you are done with importing on \"Import Templates\" tab, you will be "
+"able to add/use these templates in Elementor."
+msgstr ""
+
+#: modules/woo-account/widgets/woo-orders.php:131
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:336
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:184
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:186
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:167
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:296
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:165
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:510
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:891
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2059
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2168
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:165
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:761
+msgid "Alignment"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:587
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:391
+msgid "Already have an account?"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1326
+msgid "Amount Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1318
+msgid "Amount Typography"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1870
+msgid "Apply Coupon"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:441
+msgid "Apply coupon"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:66
+msgid "Arrow"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:205
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:468
+msgid "Arrow Icon Button"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:547
+msgid "Arrow on Mobile"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:68
+msgid ""
+"As you can see in the source code, we provided a comprehensive documentation."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:104
+msgid "ASC"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:371
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:459
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:311
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:459
+msgid "Autocomplete Value"
+msgstr ""
+
+#: extensions/bew-extensions/extensions/inside/bew-gallery-video/inc/admin/admin.php:63
+msgid "Autoplay videos"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:87
+msgid "Back to Cart"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:85
+msgid "Back to Cart text"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:100
+#: modules/woo-account/widgets/woo-navigation.php:122
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:303
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:398
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1325
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:263
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:747
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1381
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1421
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:130
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:258
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:298
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:417
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:457
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:649
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:740
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:804
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:880
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:956
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1095
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1275
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1348
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1431
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1687
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1750
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2124
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:640
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:716
+msgid "Background"
+msgstr ""
+
+#: modules/bew-scroll/module.php:67
+#: modules/woo-account/widgets/woo-downloads.php:347
+#: modules/woo-account/widgets/woo-downloads.php:400
+#: modules/woo-account/widgets/woo-edit-account.php:181
+#: modules/woo-account/widgets/woo-edit-account.php:248
+#: modules/woo-account/widgets/woo-edit-account.php:337
+#: modules/woo-account/widgets/woo-edit-account.php:378
+#: modules/woo-account/widgets/woo-orders.php:398
+#: modules/woo-account/widgets/woo-orders.php:450
+#: modules/woo-cart/widgets/woo-cart-totals.php:726
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:562
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:647
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:684
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1046
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:802
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:566
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:651
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1022
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:637
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:872
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1100
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1480
+msgid "Background Color"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:35
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:35
+msgid "Background color"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:264
+msgid ""
+"Before Import the templates make sure, you have Elementor Pro installed, "
+"Woocommerce installed with at least one product."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:389
+msgid "Before Login Text"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:88
+msgid "Before Text"
+msgstr ""
+
+#: modules/woo-account/module.php:53
+msgid "Bew Account"
+msgstr ""
+
+#: modules/woo-cart/module.php:49
+msgid "Bew Cart"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:219
+msgid "Bew Cart Pdf Button"
+msgstr ""
+
+#: modules/woo-checkout/module.php:57
+msgid "Bew Checkout"
+msgstr ""
+
+#: modules/bew-single/module.php:38
+msgid "Bew Single Product"
+msgstr ""
+
+#: includes/theme-builder/inc/bew-templates-for-elementor-source.php:26
+msgid "Bew Templates"
+msgstr ""
+
+#: modules/woo-thankyou/module.php:46
+msgid "Bew Thankyou"
+msgstr ""
+
+#: plugin.php:263
+msgid "Bew Woo Cart"
+msgstr ""
+
+#: plugin.php:272
+msgid "Bew Woo Checkout"
+msgstr ""
+
+#: plugin.php:281
+msgid "Bew Woo My Account"
+msgstr ""
+
+#: plugin.php:290
+msgid "Bew Woo Thank You"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:622
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:639
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:360
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:377
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:281
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:298
+msgid "Bill To"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:637
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:375
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:296
+msgid "Bill To text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:222
+msgid "Billing Fields"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-11.php:32
+msgid "Block Variety"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:134
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:268
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:410
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:486
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:583
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:659
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:140
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:699
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:845
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1063
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1337
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:612
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:819
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1271
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:228
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:358
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:434
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:587
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:663
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:837
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1038
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:229
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:291
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:886
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1117
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1393
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1433
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:270
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:310
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:429
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:469
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:661
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:752
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:816
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:968
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1130
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1496
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1550
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1699
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2160
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:448
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:502
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:652
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:753
+msgid "Border"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:84
+#: modules/woo-account/widgets/woo-downloads.php:155
+#: modules/woo-account/widgets/woo-downloads.php:358
+#: modules/woo-account/widgets/woo-downloads.php:411
+#: modules/woo-account/widgets/woo-edit-account.php:170
+#: modules/woo-account/widgets/woo-edit-account.php:237
+#: modules/woo-account/widgets/woo-edit-account.php:348
+#: modules/woo-account/widgets/woo-edit-account.php:389
+#: modules/woo-account/widgets/woo-orders.php:108
+#: modules/woo-account/widgets/woo-orders.php:178
+#: modules/woo-account/widgets/woo-orders.php:409
+#: modules/woo-account/widgets/woo-orders.php:461
+msgid "Border Color"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:369
+#: modules/woo-account/widgets/woo-downloads.php:422
+#: modules/woo-account/widgets/woo-edit-account.php:191
+#: modules/woo-account/widgets/woo-edit-account.php:259
+#: modules/woo-account/widgets/woo-navigation.php:142
+#: modules/woo-account/widgets/woo-orders.php:419
+#: modules/woo-account/widgets/woo-orders.php:472
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:290
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:418
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:494
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:591
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:148
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1076
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1288
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:832
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1280
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:250
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:366
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:442
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:595
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:846
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1050
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1130
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1344
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:338
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:497
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1138
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1505
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1559
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1650
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:457
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:511
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:603
+msgid "Border Radius"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:710
+msgid "Border Redius"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1318
+msgid "Border Width Minus Box"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1332
+msgid "Border Width Plus Box"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:237
+msgid "Both"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:220
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:499
+msgid "Bottom"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:811
+msgid "Box Checked Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:797
+msgid "Box Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:228
+msgid "Boxes"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:290
+msgid "Briefcase Elementor Widgets 2.0"
+msgstr ""
+
+#: includes/theme-builder/init.php:54
+#: includes/theme-builder/conditions/briefcasewp.php:30
+#: includes/theme-builder/documents/briefcasewp.php:35
+msgid "Briefcasewp"
+msgstr ""
+
+#. Author of the plugin
+msgid "briefcaseWP"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:291
+msgid "Briefcasewp Designs."
+msgstr ""
+
+#. Name of the plugin
+#: plugin.php:254
+msgid "Briefcasewp Extras"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:503
+#: extensions/bew-importer/includes/importer.php:510
+msgid ""
+"Briefcasewp Extras requires Elementor plugin to be active. Without it import "
+"of templates will not work."
+msgstr ""
+
+#: extensions/bew-importer/includes/admin.php:119
+msgid "Briefcasewp.com"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:85
+msgid "Browser Support"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:227
+msgid "Bubble"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-account.php:283
+msgid "Button"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:439
+#: modules/woo-cart/widgets/woo-cart-table.php:478
+#: modules/woo-cart/widgets/woo-cart-table.php:504
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:157
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:535
+msgid "Button Text"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:800
+#: modules/woo-cart/widgets/woo-cart-totals.php:1112
+#: modules/woo-cart/widgets/woo-return-to-shop.php:236
+msgid "Button Width"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:89
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:121
+msgid "Cart"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:419
+#: modules/woo-cart/widgets/woo-cart-table.php:1617
+msgid "Cart Actions"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:54
+msgid "Cart Products Table"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:87
+msgid "Cart Quantity"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:61
+#: modules/woo-cart/widgets/woo-cart-table.php:533
+msgid "Cart Title"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:79
+msgid "Cart Totals"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:24
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:24
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:73
+msgid "Categories"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:47
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:60
+msgid "Category 1"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:54
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:66
+msgid "Category 2"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:61
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:72
+msgid "Category 3"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:68
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:78
+msgid "Category 4"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:75
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:84
+msgid "Category 5"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-content.php:95
+#: modules/woo-account/widgets/woo-dashboard.php:95
+#: modules/woo-account/widgets/woo-downloads.php:115
+#: modules/woo-account/widgets/woo-downloads.php:184
+#: modules/woo-account/widgets/woo-edit-account.php:93
+#: modules/woo-account/widgets/woo-edit-address.php:138
+#: modules/woo-account/widgets/woo-edit-address.php:196
+#: modules/woo-account/widgets/woo-login.php:82
+#: modules/woo-account/widgets/woo-login.php:204
+#: modules/woo-account/widgets/woo-login.php:578
+#: modules/woo-account/widgets/woo-logout.php:85
+#: modules/woo-account/widgets/woo-navigation.php:186
+#: modules/woo-account/widgets/woo-orders.php:139
+#: modules/woo-account/widgets/woo-orders.php:207
+#: modules/woo-account/widgets/woo-register.php:200
+#: modules/woo-account/widgets/woo-register.php:427
+#: modules/woo-cart/widgets/woo-cart-table.php:303
+#: modules/woo-cart/widgets/woo-cart-table.php:347
+#: modules/woo-cart/widgets/woo-cart-table.php:612
+#: modules/woo-cart/widgets/woo-cart-table.php:715
+#: modules/woo-cart/widgets/woo-cart-table.php:809
+#: modules/woo-cart/widgets/woo-cart-table.php:1688
+#: modules/woo-cart/widgets/woo-cart-totals.php:311
+#: modules/woo-cart/widgets/woo-cart-totals.php:1089
+#: modules/woo-cart/widgets/woo-empty-cart-message.php:158
+#: modules/woo-cart/widgets/woo-return-to-shop.php:79
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:344
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:192
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:118
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:194
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:175
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:304
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:175
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:173
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:518
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:221
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:899
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2067
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2176
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:173
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:769
+#: modules/woo-thankyou/widgets/woo-customer-details.php:109
+#: modules/woo-thankyou/widgets/woo-customer-details.php:166
+#: modules/woo-thankyou/widgets/woo-order-details.php:206
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:209
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:339
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:394
+msgid "Center"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:653
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:421
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:312
+msgid "Change"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:651
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:419
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:310
+msgid "Change text"
+msgstr ""
+
+#: plugin.php:45 plugin.php:56 base/module-base.php:33 base/module-base.php:44
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:825
+msgid "Check Color"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:294
+msgid "Check the New Features"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:255
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:331
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:252
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1080
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:407
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:762
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:215
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:787
+msgid "Checkbox"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1259
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:825
+msgid "Checkbox Background Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1248
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:814
+msgid "Checkbox Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:501
+msgid "Checkbox Field"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1224
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:791
+msgid "Checkbox Size"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1347
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1709
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:662
+msgid "Checked"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:2101
+msgid "Checkout Button"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:29
+msgid "Checkout Coupon Form"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:29
+msgid "Checkout Express Buttons"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:31
+msgid "Checkout Form Additional"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:50
+msgid "Checkout Form Billing"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:31
+msgid "Checkout Form Contact Information"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:29
+msgid "Checkout Form Login"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:31
+msgid "Checkout Form Shipping"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:29
+msgid "Checkout Multistep Actions"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:29
+msgid "Checkout Multistep Timeline"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:30
+msgid "Checkout Payment"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:29
+msgid "Checkout Place Order"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:30
+msgid "Checkout Review Order"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:30
+msgid "Checkout Shipping Options"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:82
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:63
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:63
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:62
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:62
+msgid "Checkout Steps"
+msgstr ""
+
+#: modules/bew-template/widgets/single-template.php:46
+msgid "Choose Product"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:67
+msgid "Circle"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:234
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:289
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:234
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:364
+msgid "Class Name"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:61
+#: extensions/bew-builder/widgets/blocks/feature/block-8.php:42
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:81
+msgid "Clean Code"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:577
+msgid "Cleaning..."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1337
+msgid "Code Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:66
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:330
+msgid "Collapse"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:223
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:387
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:465
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:551
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:636
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:117
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1314
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1354
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:183
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:346
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:413
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:499
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:555
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:640
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1370
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1410
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:247
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:287
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:406
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:446
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1181
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1234
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1264
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1420
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1676
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1716
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1812
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:417
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:629
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:669
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:66
+msgid "Color"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-11.php:37
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:89
+msgid "Color Pallet"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:178
+msgid "Column Span"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:187
+msgid "Column Width"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:24
+msgid ""
+"Completely leverage other's covalent products whereas covalent manufactured "
+"products."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:320
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:407
+msgid "Conditional Field"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:226
+#: extensions/bew-importer/includes/importer.php:345
+msgid "Connect"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:562
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:579
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:300
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:317
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:221
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:238
+msgid "Contact"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:203
+msgid "Contact Information Fields"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:577
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:315
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:236
+msgid "Contact text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1541
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:493
+#: modules/woo-thankyou/widgets/woo-order-details.php:417
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:51
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:44
+msgid "Content"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:841
+msgid "Contents"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:126
+msgid "Continue to"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:124
+msgid "Continue To text"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-4.php:37
+msgid "Conversion"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:148
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:121
+msgid "Count"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1734
+msgid "Coupon"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:427
+msgid "Coupon Area"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:158
+#: modules/woo-cart/widgets/woo-cart-totals.php:652
+msgid "Coupon Code"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:454
+msgid "Coupon code"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:522
+msgid "Coupon Code?"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:60
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:506
+msgid "Coupon Layout"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:292
+msgid ""
+"Create a unique and modern E-Commerce website for your business with "
+"Briefcase Elementor Widgets 2.0. \n"
+"\t\tMake your own  homepage, shop page and single product just as you "
+"imagined it."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:653
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:457
+msgid "Create Account Layout"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-2.php:22
+msgid "Create Admin Area"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:475
+msgid "Create an account"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-4.php:41
+msgid "Create result"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:634
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:642
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:438
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:446
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1068
+msgid "Create User Account"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cross-sells.php:76
+msgid "Cross Sells"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:135
+msgid "Custom"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-order-details.php:113
+msgid "Custom Fields"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:306
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:313
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:389
+msgid "Custom Key"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-empty-cart-message.php:60
+msgid "Custom Message"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:580
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:610
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:640
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:654
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:88
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:101
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:114
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:127
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:140
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:318
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:348
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:378
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:408
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:422
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:239
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:269
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:299
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:313
+msgid "Custom text here"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details.php:29
+#: modules/woo-thankyou/widgets/woo-customer-details.php:53
+msgid "Customer Details"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:29
+msgid "Customer Details Extras"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details.php:61
+msgid "Customer Details Layout"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:52
+msgid "Customer Extras Details"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:60
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:71
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:189
+msgid "Customer Information"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:49
+#: extensions/bew-builder/widgets/blocks/feature/block-9.php:43
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:73
+msgid "Customizable"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:315
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:391
+msgid "customkey"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:258
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:334
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:255
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:410
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:96
+msgid "Date"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:182
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:450
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:65
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:102
+msgid "Default"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:231
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:277
+msgid "Default Checked"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:103
+msgid "DESC"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:117
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:120
+msgid "Description"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:130
+msgid "Description Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1412
+msgid "Description Typography"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-10.php:52
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-11.php:33
+msgid "Develop pages like lego"
+msgstr ""
+
+#: includes/bew-woo-templates/bew-cart-totals.php:42
+#: includes/bew-woo-templates/bew-review-order.php:121
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1298
+msgid "Discount"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-4.php:45
+msgid "Discover more features"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:97
+msgid "Documentation"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:67
+msgid "Documented"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:102
+msgid "Dont Need Shipping"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:293
+msgid "Download"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:268
+msgid "Download Template Zip Here:"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:574
+msgid "Downloading files"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:237
+msgid "Downloads remaining"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-10.php:55
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-11.php:38
+msgid "Dozen of colors for elements"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-10.php:58
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-11.php:43
+msgid "Drag and drop page design"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-8.php:24
+msgid ""
+"Dramatically reintermediate effective applications after high-payoff core "
+"competencies. Authoritatively optimize collaborative benefits for error-free "
+"communities. Dramatically reintermediate effective applications after high-"
+"payoff core competencies. Authoritatively optimize collaborative benefits "
+"for error-free communities."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-10.php:42
+msgid "Easy Customization"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:263
+msgid "Elementor Templates"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-6.php:42
+msgid "Elements & Components"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:42
+msgid "Elements Per Page"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:260
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:336
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:257
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:412
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:109
+msgid "Email"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-empty-cart-message.php:53
+msgid "Empty Cart Message"
+msgstr ""
+
+#: modules/woo-account/module.php:61
+msgid "Enable Account"
+msgstr ""
+
+#: modules/woo-account/module.php:69
+msgid "Enable Bew Account page on this section"
+msgstr ""
+
+#: modules/woo-cart/module.php:57
+msgid "Enable Bew Cart"
+msgstr ""
+
+#: modules/woo-cart/module.php:79
+msgid "Enable Bew Cart loading effect."
+msgstr ""
+
+#: modules/woo-cart/module.php:65
+msgid "Enable Bew Cart on this section."
+msgstr ""
+
+#: modules/woo-checkout/module.php:73
+msgid "Enable Bew Checkout Form on this section"
+msgstr ""
+
+#: modules/woo-checkout/module.php:87
+msgid "Enable Bew Checkout loading effect."
+msgstr ""
+
+#: modules/woo-checkout/module.php:105
+msgid "Enable Bew Checkout Multis on this section"
+msgstr ""
+
+#: modules/woo-checkout/module.php:112
+msgid "Enable Bew Fast Checkout"
+msgstr ""
+
+#: modules/woo-checkout/module.php:120
+msgid "Enable Bew Fast Checkout on this section"
+msgstr ""
+
+#: modules/woo-thankyou/module.php:62
+msgid "Enable Bew Thankyou page on this section"
+msgstr ""
+
+#: modules/woo-checkout/module.php:65
+msgid "Enable Checkout Form"
+msgstr ""
+
+#: modules/woo-checkout/module.php:97
+msgid "Enable Checkout Multistep"
+msgstr ""
+
+#: modules/woo-cart/module.php:72 modules/woo-checkout/module.php:80
+msgid "Enable Loading"
+msgstr ""
+
+#: modules/bew-single/module.php:53
+msgid "Enable Single Product Summary on this section"
+msgstr ""
+
+#: modules/bew-single/module.php:46
+msgid "Enable Summary"
+msgstr ""
+
+#: modules/woo-thankyou/module.php:54
+msgid "Enable Thankyou"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:757
+msgid "Enabled custom Padding & Margin"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-4.php:23
+msgid "Endless Features"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-10.php:24
+#: extensions/bew-builder/widgets/blocks/feature/block-9.php:25
+msgid ""
+"Energistically transform pandemic manufactured products whereas premier "
+"solutions. Compellingly streamline an expanded array of web-readiness rather."
+msgstr ""
+
+#: includes/bew-woo-templates/bew-cart-totals.php:137
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:575
+msgid "Enter Code"
+msgstr ""
+
+#: includes/bew-woo-templates/bew-review-order.php:191
+msgid "Enter Coupon code"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:351
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:437
+msgid "Enter option"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:172
+msgid "Enter the address that matches your card or payment method."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:353
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:439
+msgid ""
+"Enter the option from superior field selected for your conditional display"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:367
+msgid "Enter the options one per line"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:687
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:508
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:667
+msgid "Error"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:578
+msgid "Everything done!"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:146
+msgid "Exclude Categories"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:265
+msgid "Expires"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-16.php:23
+msgid "Explore It"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-17.php:27
+msgid "Explore the best SaaS template in the market in a short 1-minute video."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-16.php:24
+msgid ""
+"Explore the best Woocommerce Addons for Elementor in a short 1-minute video."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:53
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:61
+msgid "Express Buttons"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:76
+msgid "Express checkout"
+msgstr ""
+
+#. Description of the plugin
+msgid "Extra features for Briefcase Elementor Widgets."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-4.php:35
+msgid "Fast & easy work"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:723
+msgid "Fast Checkout"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:77
+msgid "Faster"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-10.php:45
+msgid "Feature list"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:21
+#: extensions/bew-builder/widgets/blocks/feature/block-11.php:21
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:23
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:22
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:23
+#: extensions/bew-builder/widgets/blocks/feature/block-6.php:23
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:74
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-1.php:23
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-3.php:21
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:64
+msgid "Features"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:154
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:230
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:303
+msgid "Field Editor"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:295
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:302
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:292
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:378
+msgid "Field Name"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:761
+msgid "First Name"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:759
+msgid "First Name Text"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-account.php:212
+msgid "Focus"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1092
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:848
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1065
+msgid "Focus Border Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1108
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:864
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1080
+msgid "Focus Border Width"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-order-details.php:100
+msgid "Footer"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:370
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:329
+msgid "Form"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1178
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:934
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1148
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1200
+msgid "Form Row First Width"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1204
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:960
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1174
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1226
+msgid "Form Row Last Width"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1152
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:908
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1122
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1174
+msgid "Form Row Wide Width"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:73
+msgid "Free Updates"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:731
+msgid "Full Name"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:743
+msgid "Full Name Text"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:23
+msgid "Full, Faster, Functional"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:778
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1390
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:545
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1026
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:53
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:704
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:547
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:122
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:641
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:327
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:112
+#: modules/woo-thankyou/widgets/woo-order-details.php:231
+msgid "General"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:157
+msgid "General Style"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-2.php:29
+msgid "Get start now"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:575
+msgid "Get templates"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-15.php:25
+msgid "Give a Fresh Design to Your SaaS"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:373
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:461
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:313
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:461
+msgid "Given value"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:71
+msgid "Gradient"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:22
+msgid "Great Combination"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:56
+msgid "Grid Columns"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:69
+msgid "Group by"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:94
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:142
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:123
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:123
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:122
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:196
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:121
+msgid "H1"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:95
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:143
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:124
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:124
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:123
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:197
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:122
+msgid "H2"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:96
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:144
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:125
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:125
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:124
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:198
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:123
+msgid "H3"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:97
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:145
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:126
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:126
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:125
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:199
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:124
+msgid "H4"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:98
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:146
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:127
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:127
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:126
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:200
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:125
+msgid "H5"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:99
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:147
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:128
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:128
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:127
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:201
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:126
+msgid "H6"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:696
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:712
+msgid "Have an account?"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:24
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:24
+msgid "Header Varieties"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:238
+#: modules/woo-thankyou/widgets/woo-order-details.php:61
+msgid "Heading"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:143
+msgid "Heading Title"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:49
+msgid "Headings"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:978
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1230
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:986
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1200
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1252
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:160
+msgid "Height"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:77
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:120
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:64
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:97
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:113
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:161
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:78
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:94
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:142
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:79
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:105
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:118
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:144
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:78
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:77
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:77
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:93
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:141
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:290
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:447
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:471
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:484
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:64
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:98
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:88
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:179
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:252
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:282
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:383
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:396
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:409
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:422
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:444
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:457
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:473
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:497
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:550
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:563
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:591
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:628
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:77
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:93
+msgid "Hide"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:83
+msgid "Hide Empty"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:481
+msgid "Hide Field"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:205
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:265
+msgid "Hide Label"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:239
+msgid "Hide Method Label"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:248
+msgid "Hide on Mobile"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:252
+msgid "Hide Paypal Description"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1520
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1369
+msgid "Hint Text Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1501
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1342
+msgid "Hint Typography"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:63
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:381
+msgid "Horizontal"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:382
+#: modules/woo-account/widgets/woo-edit-account.php:360
+#: modules/woo-account/widgets/woo-orders.php:432
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:630
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:634
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1403
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:280
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:439
+msgid "Hover"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1954
+msgid "Hover Background Color"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1943
+msgid "Hover Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:138
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:119
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:118
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:117
+msgid "HTML Tag"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://briefcasewp.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://briefcasewp.com/bew-extras"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:410
+msgid "I don&rsquo;t have an account"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:235
+#: modules/woo-cart/widgets/woo-cart-table.php:283
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:74
+msgid "Icon"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:32
+msgid "Icon class"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:39
+msgid "Icon color"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:1135
+msgid "Icon Size"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:428
+msgid ""
+"If you need to choose a recent created custom field, save an reload the page,"
+" to get the custom field on the list"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:130
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:134
+msgid "Image"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:53
+msgid "Image 1"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:85
+msgid "Image 2"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:117
+msgid "Image 3"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1033
+msgid "Image Border"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1041
+msgid "Image Border Radius"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:214
+msgid "Image of templates to import."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1009
+msgid "Image Size"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:886
+msgid "Image Width"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1000
+msgid "Images"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:234
+#: extensions/bew-importer/includes/importer.php:951
+msgid "Import Templates"
+msgstr ""
+
+#: extensions/bew-importer/includes/admin.php:92
+#: extensions/bew-importer/includes/admin.php:142
+#: extensions/bew-importer/includes/importer.php:212
+msgid "Import templates"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:269
+msgid "Import templates in Elementor"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:166
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:242
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:315
+msgid ""
+"IMPORTANT: To apply all changes from fields editor, save and reload this "
+"template."
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:952
+msgid "Importer Instructions"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:576
+msgid "Importing templates"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-4.php:32
+msgid "Impression"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:131
+msgid "Include Categories"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-7.php:25
+msgid "Increase Your Sells"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:183
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:451
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:91
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:125
+msgid "Information"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:347
+msgid "Initially Closed"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:112
+msgid "Initially Closed on Mobile"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:76
+#: modules/woo-thankyou/widgets/woo-customer-details.php:65
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:75
+msgid "Inline"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-account.php:118
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:67
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:94
+msgid "Input"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:2001
+#: modules/woo-cart/widgets/woo-cart-totals.php:823
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:405
+msgid "Input Box"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:2010
+#: modules/woo-cart/widgets/woo-cart-totals.php:841
+msgid "Input Box Color"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:2075
+#: modules/woo-cart/widgets/woo-cart-totals.php:897
+msgid "Input Box Width"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1046
+msgid "Input Field"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:650
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:992
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:748
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:971
+msgid "Input Fields"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:194
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:255
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:212
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:939
+msgid "Input Label"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:670
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1014
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1445
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:770
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:992
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1068
+msgid "Input Text Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:250
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:326
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:247
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:402
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:85
+msgid "Input Type"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:115
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:588
+msgid "Inside Label"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:220
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:277
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:619
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:669
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:222
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:423
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:490
+msgid "Inside Layout"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-4.php:24
+msgid ""
+"Interactively maintain vertical portals through competitive strategic theme "
+"areas. Collaboratively reintermediate cross-platform data rather than state "
+"of the art value."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-15.php:26
+#: extensions/bew-builder/widgets/blocks/feature/block-7.php:26
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-6.php:28
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-6.php:35
+msgid ""
+"Interactively productize worldwide potentialities before long-term high-"
+"impact initiatives. Completely disintermediate excellent leadership skills "
+"with client-centric content."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:531
+msgid "Invalid contact email address."
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-order-details.php:87
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:197
+msgid "Items"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-content.php:103
+#: modules/woo-account/widgets/woo-dashboard.php:103
+#: modules/woo-account/widgets/woo-downloads.php:123
+#: modules/woo-account/widgets/woo-downloads.php:192
+#: modules/woo-account/widgets/woo-edit-account.php:101
+#: modules/woo-account/widgets/woo-edit-address.php:146
+#: modules/woo-account/widgets/woo-edit-address.php:204
+#: modules/woo-account/widgets/woo-login.php:90
+#: modules/woo-account/widgets/woo-login.php:212
+#: modules/woo-account/widgets/woo-login.php:586
+#: modules/woo-account/widgets/woo-logout.php:93
+#: modules/woo-account/widgets/woo-navigation.php:194
+#: modules/woo-account/widgets/woo-orders.php:147
+#: modules/woo-account/widgets/woo-orders.php:215
+#: modules/woo-account/widgets/woo-register.php:208
+#: modules/woo-account/widgets/woo-register.php:435
+#: modules/woo-cart/widgets/woo-cart-table.php:311
+#: modules/woo-cart/widgets/woo-cart-table.php:355
+#: modules/woo-cart/widgets/woo-cart-table.php:620
+#: modules/woo-cart/widgets/woo-cart-table.php:723
+#: modules/woo-cart/widgets/woo-cart-table.php:817
+#: modules/woo-cart/widgets/woo-cart-table.php:1696
+#: modules/woo-cart/widgets/woo-cart-totals.php:319
+#: modules/woo-cart/widgets/woo-cart-totals.php:1097
+#: modules/woo-cart/widgets/woo-empty-cart-message.php:166
+#: modules/woo-cart/widgets/woo-return-to-shop.php:87
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:352
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:200
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:126
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:202
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:183
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:312
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:183
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:181
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:526
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:229
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:907
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2075
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2184
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:181
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:777
+#: modules/woo-thankyou/widgets/woo-customer-details.php:117
+#: modules/woo-thankyou/widgets/woo-customer-details.php:174
+#: modules/woo-thankyou/widgets/woo-order-details.php:214
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:217
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:347
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:402
+msgid "Justified"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:67
+msgid "Kid"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-account.php:50
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:711
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1596
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:550
+#: modules/woo-thankyou/widgets/woo-order-details.php:551
+msgid "Label"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-account.php:65
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1277
+msgid "Label Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:265
+msgid "Label Inside Layout"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:473
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:573
+msgid "Label Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:565
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:882
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:649
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:875
+msgid "Labels"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:58
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:179
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:61
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:61
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:209
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:494
+msgid "Layout"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-content.php:91
+#: modules/woo-account/widgets/woo-dashboard.php:91
+#: modules/woo-account/widgets/woo-downloads.php:111
+#: modules/woo-account/widgets/woo-downloads.php:180
+#: modules/woo-account/widgets/woo-edit-account.php:89
+#: modules/woo-account/widgets/woo-edit-address.php:134
+#: modules/woo-account/widgets/woo-edit-address.php:192
+#: modules/woo-account/widgets/woo-login.php:78
+#: modules/woo-account/widgets/woo-login.php:200
+#: modules/woo-account/widgets/woo-login.php:574
+#: modules/woo-account/widgets/woo-logout.php:81
+#: modules/woo-account/widgets/woo-navigation.php:182
+#: modules/woo-account/widgets/woo-orders.php:135
+#: modules/woo-account/widgets/woo-orders.php:203
+#: modules/woo-account/widgets/woo-register.php:196
+#: modules/woo-account/widgets/woo-register.php:423
+#: modules/woo-cart/widgets/woo-cart-table.php:299
+#: modules/woo-cart/widgets/woo-cart-table.php:343
+#: modules/woo-cart/widgets/woo-cart-table.php:608
+#: modules/woo-cart/widgets/woo-cart-table.php:711
+#: modules/woo-cart/widgets/woo-cart-table.php:805
+#: modules/woo-cart/widgets/woo-cart-table.php:1684
+#: modules/woo-cart/widgets/woo-cart-totals.php:307
+#: modules/woo-cart/widgets/woo-cart-totals.php:1085
+#: modules/woo-cart/widgets/woo-empty-cart-message.php:154
+#: modules/woo-cart/widgets/woo-return-to-shop.php:75
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:340
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:188
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:114
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:190
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:171
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:300
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:171
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:169
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:514
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:217
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:895
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2063
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2172
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:169
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:765
+#: modules/woo-thankyou/widgets/woo-customer-details.php:105
+#: modules/woo-thankyou/widgets/woo-customer-details.php:162
+#: modules/woo-thankyou/widgets/woo-order-details.php:202
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:205
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:335
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:390
+msgid "Left"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:256
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:216
+msgid "Left Icon Color"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-10.php:37
+msgid "Legi Base"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-8.php:27
+msgid "Lego Base"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:328
+#: extensions/bew-importer/includes/importer.php:953
+msgid "License"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cross-sells.php:84
+msgid "Limit"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:960
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:716
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:939
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1014
+msgid "Line Height"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:68
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:122
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:53
+msgid "Link"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-content.php:68
+#: modules/woo-account/widgets/woo-dashboard.php:68
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:234
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:128
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:194
+msgid "Link Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:245
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:205
+msgid "Link Hover Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:102
+msgid "Link Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:215
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:175
+msgid "Link Typography"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:160
+msgid "Load More"
+msgstr ""
+
+#: modules/woo-cart/module.php:89
+msgid "Loading Layout"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:604
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:408
+msgid "Log in."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:90
+msgid "Login"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:569
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:373
+msgid "Login Account Layout"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:602
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:406
+msgid "Login Link Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:550
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:558
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:354
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:362
+msgid "Login User Account"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-10.php:49
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-11.php:28
+msgid "MailChimp integration included"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:166
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:312
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:430
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:518
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:615
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:160
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:489
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:606
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:738
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:798
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:865
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1140
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1413
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1468
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1543
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:565
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:632
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:896
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1053
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1136
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1208
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1304
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1400
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:272
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:378
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:466
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:522
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:619
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1110
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:567
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:614
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:773
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:910
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:979
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1162
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1332
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1514
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:154
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:363
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:522
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:988
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1380
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1454
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1529
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1583
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1773
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2024
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2147
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:481
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:535
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:740
+#: modules/woo-thankyou/widgets/woo-order-details.php:187
+#: modules/woo-thankyou/widgets/woo-order-details.php:326
+#: modules/woo-thankyou/widgets/woo-order-details.php:405
+#: modules/woo-thankyou/widgets/woo-order-details.php:529
+#: modules/woo-thankyou/widgets/woo-order-details.php:643
+msgid "Margin"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-7.php:24
+msgid "Marketing"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:59
+msgid "Men"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:390
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:407
+msgid "Method"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:405
+msgid "Method text"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:219
+msgid "Middle"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:278
+msgid "Mobile Remove Layout"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:109
+msgid "Mockups"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-11.php:32
+#: extensions/bew-builder/widgets/blocks/feature/block-11.php:37
+msgid ""
+"Monotonectally leverage existing standards compliant ideas with distributed "
+"data. Efficiently simplify cross-unit systems whereas adaptive testing. "
+"Monotonectally leverage existing standards compliant ideas with distributed "
+"data. Efficiently simplify cross-unit systems whereas adaptive testing."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-2.php:22
+msgid "More Features"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:955
+msgid "More from BriefcaseWp"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:289
+msgid "More from BriefcaseWp 2.0"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-8.php:23
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-3.php:22
+msgid "More Than You Think"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-11.php:22
+msgid "More to Discover"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:603
+msgid "Move Coupon to bottom"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:171
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:439
+msgid "Multistep"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:53
+msgid "Multistep Actions"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:542
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:550
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:279
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:287
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:201
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:209
+msgid "Multistep Review"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:53
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:147
+msgid "Multistep Timeline"
+msgstr ""
+
+#: modules/woo-account/widgets/woocommerce-bookings/bookings.php:13
+msgid "My Account WC Bookings"
+msgstr ""
+
+#: modules/woo-account/widgets/woocommerce-points-and-rewards/woocommerce-points-and-rewards.php:14
+msgid "My Account WC Points and Rewards"
+msgstr ""
+
+#: modules/woo-account/widgets/woocommerce-subscriptions/subscriptions.php:13
+msgid "My Account WC Subscriptions"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:745
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:118
+msgid "Name"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:206
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:268
+msgid "Name Background"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:184
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:246
+msgid "Name Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:156
+msgid "Name Typography"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1162
+msgid "Names"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:54
+msgid "New <br> Arrivals"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:196
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:257
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:214
+msgid "New Section"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:78
+msgid "New Step"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:32
+msgid "News"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:100
+msgid "Next"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:98
+msgid "Next text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:65
+msgid "Next/Prev"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:208
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:396
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:411
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:268
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:499
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:514
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:561
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:622
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:672
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:734
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:426
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:493
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:499
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:514
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:606
+msgid "No"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:223
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:323
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:384
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:280
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:410
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:472
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:484
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:225
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:324
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:472
+msgid "no"
+msgstr ""
+
+#: includes/theme-builder/conditions/briefcasewp.php:34
+msgid "No Conditions"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:47
+msgid "None"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:329
+#: modules/woo-account/widgets/woo-edit-account.php:145
+#: modules/woo-account/widgets/woo-edit-account.php:319
+#: modules/woo-account/widgets/woo-orders.php:380
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:544
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1307
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:548
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:177
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1363
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:240
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:399
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1669
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:622
+msgid "Normal"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:267
+msgid ""
+"Note: If you have issues importing templates, we recommend use Elementor "
+"import template option. check "
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:259
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:335
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:256
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:411
+msgid "Number"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:32
+msgid "Number 1"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:64
+msgid "Number 2"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:96
+msgid "Number 3"
+msgstr ""
+
+#: modules/bew-single/module.php:49 modules/woo-account/module.php:64
+#: modules/woo-cart/module.php:60 modules/woo-cart/module.php:75
+#: modules/woo-checkout/module.php:68 modules/woo-checkout/module.php:83
+#: modules/woo-checkout/module.php:100 modules/woo-checkout/module.php:115
+#: modules/woo-thankyou/module.php:57
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:85
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:645
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:66
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:365
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:449
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:65
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:242
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:255
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:268
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:100
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:115
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:333
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:350
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:366
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:65
+msgid "Off"
+msgstr ""
+
+#: modules/bew-single/module.php:48 modules/woo-account/module.php:63
+#: modules/woo-cart/module.php:59 modules/woo-cart/module.php:74
+#: modules/woo-checkout/module.php:67 modules/woo-checkout/module.php:82
+#: modules/woo-checkout/module.php:99 modules/woo-checkout/module.php:114
+#: modules/woo-thankyou/module.php:56
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:84
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:644
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:65
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:364
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:448
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:64
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:241
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:254
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:267
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:99
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:114
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:332
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:349
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:365
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:64
+msgid "On"
+msgstr ""
+
+#: modules/woo-cart/module.php:93
+msgid "One Column"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:90
+msgid "Only Top Level"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:363
+msgid "Open on Mobile"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:273
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:270
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:426
+msgid "Option 1"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:273
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:270
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:426
+msgid "Option 2"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:273
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:270
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:426
+msgid "Option 3"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:350
+msgid "Option-1"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:350
+msgid "Option-2"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:350
+msgid "Option-3"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:271
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:348
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:268
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:424
+msgid "Options"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:373
+msgid "Options Layout"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:88
+msgid "OR"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:98
+msgid "Order"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:435
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1303
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:196
+msgid "Order Button"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:456
+msgid "Order Button Text"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:114
+msgid "Order by"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:53
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:485
+msgid "Order Coupon"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-order-details.php:29
+#: modules/woo-thankyou/widgets/woo-order-details.php:53
+msgid "Order Details"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-order-details.php:341
+msgid "Order Item"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:83
+msgid "Order Number"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:321
+msgid "Order Products"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:52
+msgid "Order Received"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:232
+msgid "Order Received Content"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:70
+msgid "Order Received layout"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:60
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:151
+msgid "Order Received Message"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:787
+msgid "Order Review Content"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:696
+msgid "Order Review Header"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:939
+msgid "Order Review Products Content"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:851
+msgid "Order Review Products Titles"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:271
+msgid "Order Titles"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:616
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:685
+msgid "Order Totals"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-orders.php:50
+msgid "Orders"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:154
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:324
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:442
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:506
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:603
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:172
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:477
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:594
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:724
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:786
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:853
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:910
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:922
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1124
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1368
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1401
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1456
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1531
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:553
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:620
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:678
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:880
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1038
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1120
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1192
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1292
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1384
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:284
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:390
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:454
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:510
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:607
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:858
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:904
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1095
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:555
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:602
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:648
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:761
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:897
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:967
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1146
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1320
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1502
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:141
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:350
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:509
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:922
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:976
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1053
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1150
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1368
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1442
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1517
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1571
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1637
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1761
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2012
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2135
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:469
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:523
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:590
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:728
+#: modules/woo-thankyou/widgets/woo-order-details.php:174
+#: modules/woo-thankyou/widgets/woo-order-details.php:313
+#: modules/woo-thankyou/widgets/woo-order-details.php:393
+#: modules/woo-thankyou/widgets/woo-order-details.php:516
+#: modules/woo-thankyou/widgets/woo-order-details.php:631
+msgid "Padding"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-11.php:42
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-8.php:32
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:93
+msgid "Page Builder"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:257
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:333
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1480
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:254
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1316
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:409
+msgid "Password"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:185
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:453
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:93
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:133
+msgid "Payment"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:135
+msgid "Payment Method"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:105
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:201
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:629
+msgid "Payment Methods"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-9.php:24
+msgid "Perfect for Your Business"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:458
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:75
+msgid "Place order"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:444
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:53
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:61
+msgid "Place Order Button"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:73
+msgid "Place Order Button Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:362
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:364
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:449
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:451
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:302
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:304
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:449
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:451
+msgid "Placeholder"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:452
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:145
+msgid "Placeholder Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1030
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:786
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:1007
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1084
+msgid "Placeholder Text Color"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:215
+msgid ""
+"Please use below button to import BEW Blocks and BEW Templates to your "
+"WordPress installation."
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:262
+msgid "Plugin instructions"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:87
+msgid "Prefix Text"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-4.php:27
+msgid "Present"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:113
+msgid "Prev"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:111
+msgid "Prev text"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:132
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1215
+msgid "Price"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:306
+msgid "Price Column Heading"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:481
+msgid "Privacy Policy Text"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:189
+#: modules/woo-cart/widgets/woo-cart-totals.php:923
+msgid "Proceed Button"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:491
+#: modules/woo-cart/widgets/woo-cart-table.php:506
+msgid "Proceed to Checkout"
+msgstr ""
+
+#. 1: number of products
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:130
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:218
+#, php-format
+msgctxt "product categories"
+msgid "<p class=\"product-count\">%1$s Product</p>"
+msgid_plural "<p class=\"product-count\">%1$s Products</p>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:291
+msgid "Product Column Heading"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:834
+msgid "Product Image"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:947
+msgid "Product List"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:209
+#: modules/woo-thankyou/widgets/woo-order-details.php:427
+msgid "Product Name"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1028
+msgid "Product Price"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1082
+msgid "Product Quantity"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:105
+msgid "Product Table Heading"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:383
+msgid "Product Table Items"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:33
+msgid "Product Tabs"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:913
+msgid "Product Title"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:145
+msgid "Product title"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-order-details.php:472
+msgid "Product Total"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:23
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:23
+msgid "Products"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:133
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1065
+msgid "Quantity"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1267
+msgid "Quantity (-/+) Size"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1786
+msgid "Quantity Border"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1210
+msgid "Quantity Box Height"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1286
+msgid "Quantity Box Separation"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1191
+msgid "Quantity Box Width"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-order-details.php:461
+msgid "Quantity Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:264
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:340
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:261
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:416
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:214
+msgid "Radio"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1260
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1628
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:582
+msgid "Radio Button"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:223
+msgid "Radio Layout"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-4.php:36
+#: extensions/bew-builder/widgets/blocks/feature/block-4.php:42
+msgid ""
+"Rapidiously evisculate business markets and cooperative results. Globally "
+"leverage other high."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-7.php:32
+msgid "Read more"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-3.php:25
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:25
+msgid "Ready to find our collections."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:482
+msgid "Remember && Forgot Password"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:129
+#: modules/woo-cart/widgets/woo-cart-table.php:1495
+msgid "Remove"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1566
+msgid "Remove Height"
+msgstr ""
+
+#: includes/bew-woo-templates/bew-cart-table.php:153
+msgid "Remove Item"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:231
+msgid "Remove Layout"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1384
+msgid "Remove Link"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1543
+msgid "Remove Width"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:381
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:469
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:321
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:469
+msgid "Required"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-account.php:75
+msgid "Required Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:695
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:516
+msgid "Required Error Text"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:43
+#: extensions/bew-builder/widgets/blocks/feature/block-9.php:37
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:69
+msgid "Responsive"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-6.php:36
+#: extensions/bew-builder/widgets/blocks/feature/block-8.php:36
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-10.php:27
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-6.php:27
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-8.php:37
+msgid "Responsive Design"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:139
+msgid "Return to"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:87
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:95
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:109
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:378
+msgid "Return to Cart"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:107
+msgid "Return to Cart Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:137
+msgid "Return To text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:66
+msgid "Return/Continue"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-10.php:32
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-6.php:34
+msgid "Reusable Code"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:54
+msgid "Review Order"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:263
+msgid "Review Order Content"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:77
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:85
+msgid "Review Order Heading"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:61
+msgid "Review Order Layout"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-content.php:99
+#: modules/woo-account/widgets/woo-dashboard.php:99
+#: modules/woo-account/widgets/woo-downloads.php:119
+#: modules/woo-account/widgets/woo-downloads.php:188
+#: modules/woo-account/widgets/woo-edit-account.php:97
+#: modules/woo-account/widgets/woo-edit-address.php:142
+#: modules/woo-account/widgets/woo-edit-address.php:200
+#: modules/woo-account/widgets/woo-login.php:86
+#: modules/woo-account/widgets/woo-login.php:208
+#: modules/woo-account/widgets/woo-login.php:582
+#: modules/woo-account/widgets/woo-logout.php:89
+#: modules/woo-account/widgets/woo-navigation.php:190
+#: modules/woo-account/widgets/woo-orders.php:143
+#: modules/woo-account/widgets/woo-orders.php:211
+#: modules/woo-account/widgets/woo-register.php:204
+#: modules/woo-account/widgets/woo-register.php:431
+#: modules/woo-cart/widgets/woo-cart-table.php:307
+#: modules/woo-cart/widgets/woo-cart-table.php:351
+#: modules/woo-cart/widgets/woo-cart-table.php:616
+#: modules/woo-cart/widgets/woo-cart-table.php:719
+#: modules/woo-cart/widgets/woo-cart-table.php:813
+#: modules/woo-cart/widgets/woo-cart-table.php:1692
+#: modules/woo-cart/widgets/woo-cart-totals.php:315
+#: modules/woo-cart/widgets/woo-cart-totals.php:1093
+#: modules/woo-cart/widgets/woo-empty-cart-message.php:162
+#: modules/woo-cart/widgets/woo-return-to-shop.php:83
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:348
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:196
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:122
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:198
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:179
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:308
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:179
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:177
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:522
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:225
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:903
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2071
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2180
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:177
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:773
+#: modules/woo-thankyou/widgets/woo-customer-details.php:113
+#: modules/woo-thankyou/widgets/woo-customer-details.php:170
+#: modules/woo-thankyou/widgets/woo-order-details.php:210
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:213
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:343
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:398
+msgid "Right"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-orders.php:163
+msgid "Row Style"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:45
+msgid "Screens"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-12.php:22
+msgid "Screenshots"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1476
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:428
+msgid "Section Background Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:55
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:55
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:54
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:54
+msgid "Section Title"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:54
+msgid "Sections"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-12.php:21
+msgid "See it in action"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:81
+msgid "See more features"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:263
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:339
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:260
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:415
+msgid "Select"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:97
+msgid "Select a category"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:101
+msgid "Select None to insert manually"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:152
+msgid "Select payment options below."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:86
+msgid "Separator Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:313
+msgid "Set up an unique custom key name."
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:377
+#: extensions/bew-importer/includes/importer.php:954
+msgid "Settings"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:592
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:609
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:330
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:347
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:251
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:268
+msgid "Ship To"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:211
+msgid "Ship to Different Address"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:607
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:345
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:266
+msgid "Ship To text"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:106
+#: modules/woo-cart/widgets/woo-cart-totals.php:574
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:184
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:452
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:92
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:129
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:432
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1392
+msgid "Shipping"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:122
+msgid "Shipping Calculator"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:203
+msgid "Shipping Fields"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:140
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1467
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:104
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:409
+msgid "Shipping Options"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:76
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:119
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:63
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:96
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:112
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:160
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:77
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:93
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:141
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:78
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:104
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:117
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:143
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:77
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:76
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:76
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:92
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:140
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:289
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:446
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:470
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:483
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:63
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:97
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:87
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:178
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:251
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:281
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:382
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:395
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:408
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:421
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:443
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:456
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:472
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:496
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:549
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:562
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:590
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:627
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:76
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:92
+msgid "Show"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:219
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:265
+msgid "Show Checkbox"
+msgstr ""
+
+#: extensions/bew-extensions/extensions/inside/bew-gallery-video/inc/admin/admin.php:77
+msgid "Show fullscreen button"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:97
+msgid "Show Heading on Desktop"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:380
+msgid "Show Images"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:393
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:496
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:496
+msgid "Show in Email"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:408
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:511
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:511
+msgid "Show in Order Detail Page"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-orders.php:58
+msgid "Show Only on Dashboard"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:34
+msgid "Show product categories on a Ajax tab filter."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:393
+msgid "Show Quantity"
+msgstr ""
+
+#: extensions/bew-extensions/extensions/inside/bew-gallery-video/inc/admin/admin.php:67
+msgid "Show relative videos"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:263
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:406
+msgid "Show Remove"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:441
+msgid "Show Shipping"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:454
+msgid "Show Shipping Description"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:470
+msgid "Show Shipping Options"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:419
+msgid "Show Subtotal"
+msgstr ""
+
+#: extensions/bew-extensions/extensions/inside/bew-gallery-video/inc/admin/admin.php:71
+msgid "Show video information"
+msgstr ""
+
+#: extensions/bew-extensions/extensions/inside/bew-gallery-video/inc/admin/admin.php:83
+msgid "Show video player controls"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:176
+msgid "Show/Hide Arrow Title"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-actions.php:74
+msgid "Show/Hide Back to cart"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:494
+msgid "Show/Hide Coupon"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:158
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:139
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:138
+msgid "Show/Hide Description"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:76
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:141
+msgid "Show/Hide Icon"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:102
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:560
+msgid "Show/Hide Label"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:63
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:110
+msgid "Show/Hide Title"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:279
+msgid "Show/Hide Titles"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:249
+msgid "Show/Hide Total Price"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:625
+msgid "Show/Hide Totals"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:696
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:712
+msgid "Sign in here"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:65
+msgid "Simple"
+msgstr ""
+
+#: modules/bew-template/widgets/single-template.php:39
+msgid "Single Product"
+msgstr ""
+
+#: modules/bew-template/widgets/single-template.php:24
+msgid "Single Product Template"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1106
+msgid "Size"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:81
+msgid "Slider"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:119
+msgid "Slug"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-1.php:24
+msgid "So Intuitive, So Easy"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:67
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:72
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:77
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:82
+msgid "Some description about the current tab."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:45
+msgid "Some description about the tab"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:77
+#: modules/woo-thankyou/widgets/woo-customer-details.php:66
+msgid "Stacked"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:573
+msgid "Starting import"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-orders.php:288
+msgid "Status"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:217
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:279
+msgid "Step Background"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:195
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:257
+msgid "Step Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:178
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:446
+msgid "Step Location"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:76
+msgid "Step name"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-multistep-timeline.php:165
+msgid "Step Typography"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1509
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1354
+msgid "Strength Text Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1492
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1329
+msgid "Strength Typography"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:931
+msgid "Stripe"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:197
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:100
+msgid "Style"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:90
+msgid "Sub Total"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:534
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:133
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:538
+msgid "Submit Button"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-11.php:27
+msgid "Subscription Ready"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:43
+msgid "Subtitle"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:134
+#: modules/woo-cart/widgets/woo-cart-table.php:517
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1245
+msgid "Subtotal"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1286
+msgid "Subtotal Padding"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:335
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:420
+msgid "Superior Field"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:349
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:435
+msgid "Superior Field Options"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:52
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:53
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:45
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:46
+msgid "Tab Content"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:36
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:37
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:37
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:38
+msgid "Tab Title"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1487
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:439
+msgid "Table"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:740
+#: modules/woo-cart/widgets/woo-cart-totals.php:392
+msgid "Table Content"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:636
+msgid "Table Heading"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:125
+msgid "Table Item"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:140
+msgid "Table Style"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:213
+msgid "Tabs"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:62
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:55
+msgid "Tabs Items"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:262
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:338
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:259
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:414
+msgid "Tel"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1463
+msgid "Terms and Conditions"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:236
+#: modules/woo-cart/widgets/woo-cart-table.php:282
+#: modules/woo-cart/widgets/woo-cart-totals.php:77
+#: modules/woo-cart/widgets/woo-empty-cart-message.php:72
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:256
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:122
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:170
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:332
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:103
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:151
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:253
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:408
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:103
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:150
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:102
+#: extensions/bew-builder/widgets/blocks/feature/block-10.php:36
+msgid "Text"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:43
+msgid "Text 1"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:75
+msgid "Text 2"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-3.php:107
+msgid "Text 3"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:343
+msgid "Text After"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:266
+msgid "Text Before"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-content.php:57
+#: modules/woo-account/widgets/woo-dashboard.php:57
+#: modules/woo-account/widgets/woo-downloads.php:336
+#: modules/woo-account/widgets/woo-downloads.php:389
+#: modules/woo-account/widgets/woo-edit-account.php:151
+#: modules/woo-account/widgets/woo-edit-account.php:218
+#: modules/woo-account/widgets/woo-edit-account.php:326
+#: modules/woo-account/widgets/woo-edit-account.php:367
+#: modules/woo-account/widgets/woo-navigation.php:89
+#: modules/woo-account/widgets/woo-orders.php:387
+#: modules/woo-account/widgets/woo-orders.php:439
+#: modules/woo-cart/widgets/woo-cart-table.php:2109
+#: modules/woo-cart/widgets/woo-cart-totals.php:715
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:583
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:833
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:899
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:600
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:667
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1105
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1177
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:780
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:893
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:681
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:733
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:860
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:956
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1490
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:869
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1084
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1615
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2112
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:568
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:704
+#: modules/woo-thankyou/widgets/woo-order-details.php:365
+#: modules/woo-thankyou/widgets/woo-order-details.php:441
+#: modules/woo-thankyou/widgets/woo-order-details.php:486
+msgid "Text Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:254
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:330
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:251
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:406
+msgid "Textarea"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:29
+msgid "Thank you Order"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:90
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:91
+msgid "Thank you,"
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:62
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:63
+msgid "Thank you. Your order has been received."
+msgstr ""
+
+#: extensions/bew-importer/includes/admin.php:118
+msgid "Thanks for using Bew Importer Extension!"
+msgstr ""
+
+#: includes/theme-builder/documents/briefcasewp.php:49
+msgid ""
+"The Briefcasewp allows you to easily design and edit custom shop loop skins "
+"for Bew Woo Grid Widget."
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:236
+msgid "The Importer is ready to start."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:23
+msgid ""
+"There are many variations of passages of Lorem Ipsum available, but the "
+"majority have."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:56
+msgid ""
+"There is a bunch of useful and necessary elements for developing your "
+"website."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:710
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:690
+msgid "This information is not a valid"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:697
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:518
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:677
+msgid "This information is required."
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:74
+msgid "Ticket"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:131
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:55
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:466
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:540
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:74
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:813
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1425
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:91
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:580
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1152
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:91
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:739
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:90
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:582
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:90
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:362
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:110
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:34
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:35
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:46
+msgid "Title"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:74
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:74
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:520
+msgid "Title Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:708
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:796
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1308
+msgid "Title Typography"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:662
+#: modules/woo-thankyou/widgets/woo-order-details.php:74
+#: modules/woo-thankyou/widgets/woo-order-details.php:349
+msgid "Titles"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:266
+msgid ""
+"To use templates in Elementor choose \"Add Template\" you will find "
+"\"Briefcasewp Templates\" on Blocks and Pages tabs. Please see below:"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:243
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:289
+msgid "Toggle Caption"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:720
+msgid "Toggle Typography"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:218
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:498
+msgid "Top"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:276
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:236
+msgid "Top Border Color"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1278
+msgid "Top Position"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-orders.php:316
+#: modules/woo-thankyou/widgets/woo-order-details.php:543
+#: modules/woo-thankyou/widgets/woo-order-details.php:586
+#: modules/woo-thankyou/widgets/woo-thankyou-order.php:122
+msgid "Total"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1440
+msgid "Total Price"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:732
+msgid "Total Price Typography"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:174
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2093
+msgid "Totals"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-downloads.php:434
+#: modules/woo-account/widgets/woo-edit-account.php:400
+#: modules/woo-account/widgets/woo-orders.php:484
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1441
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:318
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:477
+msgid "Transition Duration"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:934
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:690
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:916
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:991
+msgid "TranslateY"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:267
+msgid "Tutorial Here:"
+msgstr ""
+
+#: modules/woo-cart/module.php:97
+msgid "Two Columns"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:80
+msgid "Type here"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:77
+#: modules/woo-cart/widgets/woo-cart-table.php:442
+#: modules/woo-cart/widgets/woo-cart-table.php:455
+#: modules/woo-cart/widgets/woo-cart-table.php:481
+#: modules/woo-cart/widgets/woo-cart-table.php:507
+msgid "Type your title here"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:76
+msgid "Typing"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:206
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:379
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:477
+#: modules/woo-checkout/widgets/woo-checkout-coupon-form.php:574
+#: modules/woo-checkout/widgets/woo-checkout-express-request.php:109
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:552
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:574
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:659
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:825
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:891
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1001
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1269
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1437
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:592
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:658
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:757
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1093
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1165
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:166
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:338
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:425
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:491
+#: modules/woo-checkout/widgets/woo-checkout-form-login.php:578
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:751
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:771
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:884
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:980
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:594
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:670
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:722
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:849
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:948
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1055
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1312
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:1472
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:205
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:387
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:860
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1075
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1172
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1225
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1255
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1402
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1606
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:1804
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:2102
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:374
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:559
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:694
+msgid "Typography"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:55
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-9.php:77
+msgid "UI Elements"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-2.php:23
+msgid ""
+"Uniquely evolve equity invested value vis-a-vis proactive testing procedures."
+" Collaboratively create worldwide results without resource maximizing. "
+"Uniquely evolve equity invested value vis-a-vis proactive testing procedures."
+" Collaboratively create worldwide results without resource maximizing."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-10.php:23
+msgid "Unlimited Layout Option"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:465
+msgid "Update Button"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:480
+msgid "Update Cart"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:1712
+msgid "Update Cart Button"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:261
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:337
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:258
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:413
+msgid "Url"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:257
+msgid "Use Address for Billing"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:317
+msgid "Use an unique custom key name"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:542
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:1382
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:346
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:1015
+msgid "User Account"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:529
+msgid "Validation Email Error Text"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:708
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:688
+msgid "Validation Error Text"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:475
+msgid "Value"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-navigation.php:62
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:377
+msgid "Vertical"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:94
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:75
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:75
+#: modules/woo-checkout/widgets/woo-checkout-payment.php:74
+#: modules/woo-checkout/widgets/woo-checkout-shipping-options.php:74
+msgid "Vertical Line"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:214
+msgid "Vertical Position"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-16.php:22
+msgid "Video"
+msgstr ""
+
+#: extensions/bew-extensions/extensions/inside/bew-gallery-video/inc/admin/admin.php:118
+msgid "Video Link ID"
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:244
+#: extensions/bew-importer/includes/importer.php:272
+msgid "Visit plugins page"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-17.php:26
+msgid "Watch Video"
+msgstr ""
+
+#: modules/woo-account/widgets/woocommerce-memberships/memberships.php:13
+msgid "WC Memberships: My Account Memberships"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-6.php:24
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-1.php:25
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-2.php:23
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-3.php:23
+msgid ""
+"We are so excited and proud of our product. It's really easy to create a "
+"landing page for your awesome product."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:25
+msgid ""
+"We waited until we could do it right. Bew we did! Instead of creating a "
+"carbon copy."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-11.php:23
+#: extensions/bew-builder/widgets/blocks/feature/block-12.php:23
+msgid ""
+"We waited until we could do it right. Bewn we did! Instead of creating a "
+"carbon copy."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-13.php:25
+msgid ""
+"We waited until we could do it right. Then we did! Instead of creating a "
+"carbon copy."
+msgstr ""
+
+#: extensions/bew-importer/includes/importer.php:243
+#: extensions/bew-importer/includes/importer.php:271
+msgid "We will be adding more templates. So please stay tuned."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:153
+msgid "We'll use this email to send you details and updates about your order."
+msgstr ""
+
+#. %s: Plugin name
+#: extensions/bew-importer/includes/importer.php:55
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#: includes/theme-builder/documents/briefcasewp.php:48
+msgid "What is a Briefcasewp?"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:74
+msgid "When you purchase this template, you'll freely receive future updates."
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-place-order.php:213
+msgid "Width"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-5.php:63
+msgid "Women"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:29
+msgid "Woo Cart Table"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-totals.php:29
+msgid "Woo Cart Totals"
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cross-sells.php:29
+msgid "Woo Cross Sells"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:207
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:395
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:410
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:267
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:498
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:513
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:560
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:621
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:671
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:733
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:425
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:492
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:498
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:513
+#: modules/woo-checkout/widgets/woo-checkout-review-order.php:605
+msgid "Yes"
+msgstr ""
+
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:222
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:322
+#: modules/woo-checkout/widgets/woo-checkout-form-additional.php:383
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:279
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:409
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:471
+#: modules/woo-checkout/widgets/woo-checkout-form-billing.php:483
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:224
+#: modules/woo-checkout/widgets/woo-checkout-form-information.php:323
+#: modules/woo-checkout/widgets/woo-checkout-form-shipping.php:471
+msgid "yes"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:50
+#: extensions/bew-builder/widgets/blocks/feature/block-6.php:43
+#: extensions/bew-builder/widgets/blocks/feature/block-8.php:43
+#: extensions/bew-builder/widgets/blocks/feature/block-9.php:44
+msgid ""
+"You can easily read, edit, and write your own code, or change everything."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:62
+msgid "You can find our code well organized, commented and readable."
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:134
+#: extensions/bew-builder/widgets/blocks/product_tabs/block-1.php:149
+msgid "You can select multiples categories"
+msgstr ""
+
+#: modules/woo-account/widgets/woo-edit-account.php:425
+#: modules/woo-account/widgets/woo-orders.php:517
+msgid "You need first to be logged in"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/categories/block-4.php:296
+msgid "You'll see categories items after saving and reloading the page."
+msgstr ""
+
+#: modules/woo-cart/widgets/woo-cart-table.php:76
+msgid "Your Cart"
+msgstr ""
+
+#: extensions/bew-builder/widgets/blocks/feature/block-1.php:44
+#: extensions/bew-builder/widgets/blocks/feature/block-6.php:37
+#: extensions/bew-builder/widgets/blocks/feature/block-8.php:37
+#: extensions/bew-builder/widgets/blocks/feature/block-9.php:38
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-10.php:28
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-10.php:33
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-10.php:38
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-10.php:43
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-4.php:28
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-4.php:33
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-4.php:38
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-8.php:28
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-8.php:33
+#: extensions/bew-builder/widgets/blocks/textual_feature/block-8.php:38
+msgid ""
+"Your landing page displays smoothly on any device: desktop, tablet or mobile."
+msgstr ""
+
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:100
+#: modules/woo-thankyou/widgets/woo-customer-details-extras.php:101
+msgid "Your order has been received."
+msgstr ""
+
+#: extensions/bew-extensions/extensions/inside/bew-gallery-video/inc/admin/admin.php:57
+msgid "Youtube Video Settings"
+msgstr ""

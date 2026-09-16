@@ -1,0 +1,175 @@
+{
+	"data": [
+		{
+			"id": "standard-shop",
+			"title": "Standard Shop ",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "right-shop",
+			"title": "Right Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "left-shop",
+			"title": " Left Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "line-shop",
+			"title": "Line Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "card-shop",
+			"title": "Card Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "plus-shop",
+			"title": "Plus Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "hover-shop",
+			"title": "Hover Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "market-shop",
+			"title": "Market Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},		
+		{
+			"id": "color-shop",
+			"title": "Color Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "minimalism-shop",
+			"title": "Minimalism Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "fade-up-shop",
+			"title": "Fade Up Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "compare-fade-up-shop",
+			"title": "Compare Fade Up Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "wishlist-fade-up-shop",
+			"title": "Wishlist Fade Up Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "fade-in-shop",
+			"title": "Fade In Shop",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "minimalism-categories",
+			"title": "Minimalism Categories",
+			"bew_type": "woo-cat",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "box-related-products",
+			"title": "Box Related Products",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		},
+		{
+			"id": "sticky-related-products",
+			"title": "Sticky Related Products",
+			"bew_type": "woo-shop",
+			"thumbnail": "",
+			"tmpl_created": "1541385188",
+			"author": "Briefcasewp",
+			"has_page_settings": 0,
+			"url": "https://briefcasewp.com"
+		}
+				
+	]
+}
