@@ -34,6 +34,9 @@ jQuery(function ($) {
 
 	function storeSettings($widget, settings) {
 
+		$widget.attr('data-settings', JSON.stringify(settings || {}));
+	}
+
 	function getScrollDepth() {
 		var documentHeight = Math.max($(document).height(), 1);
 		var viewportBottom = $(window).scrollTop() + $(window).height();
@@ -43,8 +46,7 @@ jQuery(function ($) {
 
 		return maxScrollDepth;
 	}
-		$widget.attr('data-settings', JSON.stringify(settings || {}));
-	}
+
 
 	function setStatus($widget, message, isError) {
 		var $status = $widget.find(selectors.status);

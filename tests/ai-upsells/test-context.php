@@ -165,4 +165,12 @@ $context = ( new BEWIA_AI_Upsell_Engine() )->get_cart_context( array( 'scroll_de
 bewia_assert_same( 0, $context['scroll_depth'], 'Malformed scroll depth is ignored.' );
 bewia_assert_same( 0, $context['checkout_elapsed_seconds'], 'Malformed checkout start time is ignored.' );
 
+bewia_reset_context();
+$context = ( new BEWIA_AI_Upsell_Engine() )->get_cart_context( array( 'scroll_depth' => 101, 'checkout_started_at' => 1001 ), 1000 );
+bewia_assert_same( 0, $context['scroll_depth'], 'Scroll depth above 100 is ignored.' );
+bewia_assert_same( 0, $context['checkout_elapsed_seconds'], 'A future checkout start time is ignored.' );
+
+$context = ( new BEWIA_AI_Upsell_Engine() )->get_cart_context( array( 'checkout_started_at' => 1 ), 90000 );
+bewia_assert_same( 0, $context['checkout_elapsed_seconds'], 'A checkout start time older than one day is ignored.' );
+
 echo "Context tests passed.\n";
