@@ -19,6 +19,11 @@ bewia_frontend_assert( strpos( $js, 'bewiaRequestInFlight' ) !== false && strpos
 bewia_frontend_assert( strpos( $js, "action: 'bcwp_track_ai_upsell_rendered'" ) !== false, 'Rendered events remain wired.' );
 bewia_frontend_assert( strpos( $js, "action: 'bcwp_dismiss_ai_upsell'" ) !== false && strpos( $js, "action: 'bcwp_accept_ai_upsell'" ) !== false, 'Dismiss and add-to-cart actions remain wired.' );
 bewia_frontend_assert( strpos( $js, 'offer_id: $widget.data(\'bewiaOfferId\')' ) !== false && strpos( $js, 'offer_signature: $widget.data(\'bewiaOfferSignature\')' ) !== false, 'The emitted offer identity is sent when accepting.' );
+$request_start = strpos( $js, 'function requestUpsell($widget)' );
+$request_success = strpos( $js, 'if (response && response.success && response.data && response.data.product)', $request_start );
+$request_render = strpos( $js, 'renderProduct($widget, response.data.product);', $request_success );
+bewia_frontend_assert( false !== $request_start && false !== $request_success && false !== $request_render, 'Initial recommendation callback remains executable.' );
+bewia_frontend_assert( strpos( substr( $js, $request_success, $request_render - $request_success ), '$widget.data(\'bewiaOfferId\', response.data.offer_id || \'\')' ) !== false && strpos( substr( $js, $request_success, $request_render - $request_success ), '$widget.data(\'bewiaOfferSignature\', response.data.offer_signature || \'\')' ) !== false, 'Initial recommendation preserves both offer identity values before rendering.' );
 bewia_frontend_assert( strpos( $js, "'updated_checkout'" ) !== false && strpos( $js, "'added_to_cart'" ) !== false, 'WooCommerce checkout events remain wired.' );
 bewia_frontend_assert( strpos( $php, 'bewia_render_static_preview' ) !== false && strpos( $php, 'bewia_should_render_static_preview' ) !== false, 'Elementor preview remains static.' );
 bewia_frontend_assert( strpos( $css, 'bewia-ai-smart-upsells__urgency' ) !== false, 'Urgency has a frontend style hook.' );

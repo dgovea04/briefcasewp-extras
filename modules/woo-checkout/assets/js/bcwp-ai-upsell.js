@@ -254,6 +254,8 @@ jQuery(function ($) {
 				return;
 			}
 			if (response && response.success && response.data && response.data.product) {
+				$widget.data('bewiaOfferId', response.data.offer_id || '');
+				$widget.data('bewiaOfferSignature', response.data.offer_signature || '');
 				if (response.data.provider_source) {
 					settings.provider_source = response.data.provider_source;
 					storeSettings($widget, settings);
