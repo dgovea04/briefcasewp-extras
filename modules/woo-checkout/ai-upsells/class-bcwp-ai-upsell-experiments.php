@@ -55,6 +55,8 @@ class BEWIA_AI_Upsell_Experiments {
 			'product_id' => absint( $offer['product_id'] ),
 			'campaign_key' => sanitize_key( isset( $offer['campaign_key'] ) ? $offer['campaign_key'] : '' ),
 			'variant_id' => sanitize_key( isset( $offer['variant_id'] ) ? $offer['variant_id'] : '' ),
+			'offer_id' => sanitize_key( isset( $offer['offer_id'] ) ? $offer['offer_id'] : '' ),
+			'offer_signature' => sanitize_text_field( isset( $offer['offer_signature'] ) ? $offer['offer_signature'] : '' ),
 		);
 		self::set_session_offers( $offers );
 		return true;

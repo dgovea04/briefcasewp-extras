@@ -21,7 +21,7 @@ $items = array(
 $lines = BEWIA_AI_Upsell_Analytics::get_confirmable_offer_lines( $items );
 bewia_task5_assert( count( $lines ) === 2 && (float) $lines[0]['revenue'] === 12.5, 'Attribution uses actual line totals and preserves multiple offers.' );
 bewia_task5_assert( BEWIA_AI_Upsell_Analytics::get_confirmable_offer_lines( array( array( 'product_id' => 7, 'identity' => array(), 'line_total' => 9 ) ) ) === array(), 'Missing offer metadata is ignored.' );
-bewia_task5_assert( BEWIA_AI_Upsell_Analytics::build_attribution_match( array( 'session_id' => 's1', 'campaign_key' => 'spring', 'variant_id' => 'A', 'offer_id' => 'offer-1' ) ) === 's1|spring|a|offer-1', 'Attribution key contains session, campaign, variant and offer identity.' );
+bewia_task5_assert( BEWIA_AI_Upsell_Analytics::build_attribution_match( array( 'session_id' => 's1', 'campaign_key' => 'spring', 'variant_id' => 'A', 'offer_id' => 'offer-1', 'product_id' => 7 ) ) === 's1|spring|a|offer-1|7', 'Attribution key contains session, campaign, variant, offer and product identity.' );
 bewia_task5_assert( BEWIA_AI_Upsell_Analytics::is_confirmed_revenue_event( array( 'event' => 'accepted', 'revenue' => 12.5, 'order_id' => null ) ) === false, 'Accepted revenue is estimated, not confirmed.' );
 bewia_task5_assert( BEWIA_AI_Upsell_Analytics::is_confirmed_revenue_event( array( 'event' => 'accepted', 'revenue' => 12.5, 'order_id' => 44 ) ), 'Only an accepted event linked to an order is confirmed.' );
 echo "Order attribution tests passed.\n";

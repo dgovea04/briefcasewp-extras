@@ -43,7 +43,9 @@ class BEWIA_AI_Upsell_Ajax {
 				404
 			);
 		}
-		BEWIA_AI_Upsell_Experiments::register_emitted_offer( BEWIA_AI_Upsell_Analytics::get_session_id(), array( 'product_id' => $product->get_id(), 'campaign_key' => $settings['campaign_key'], 'variant_id' => isset( $settings['variant_id'] ) ? $settings['variant_id'] : '' ) );
+		$offer_id = sha1( BEWIA_AI_Upsell_Analytics::get_session_id() . '|' . $settings['campaign_key'] . '|' . ( isset( $settings['variant_id'] ) ? $settings['variant_id'] : '' ) . '|' . $product->get_id() );
+		$offer_signature = $this->bewia_sign_offer( $offer_id );
+		BEWIA_AI_Upsell_Experiments::register_emitted_offer( BEWIA_AI_Upsell_Analytics::get_session_id(), array( 'product_id' => $product->get_id(), 'campaign_key' => $settings['campaign_key'], 'variant_id' => isset( $settings['variant_id'] ) ? $settings['variant_id'] : '', 'offer_id' => $offer_id, 'offer_signature' => $offer_signature ) );
 
 		if ( class_exists( __NAMESPACE__ . '\BEWIA_AI_Upsell_Analytics' ) ) {
 			$analytics_data                 = $this->bewia_build_analytics_data( $settings, $product->get_id() );
@@ -57,6 +59,8 @@ class BEWIA_AI_Upsell_Ajax {
 				'provider_source' => $engine->get_last_provider_source(),
 				'campaign_key'    => $settings['campaign_key'],
 				'variant_id'      => isset( $settings['variant_id'] ) ? $settings['variant_id'] : '',
+				'offer_id'        => $offer_id,
+				'offer_signature' => $offer_signature,
 			)
 		);
 	}
@@ -234,16 +238,16 @@ class BEWIA_AI_Upsell_Ajax {
 	 * Presentation/context settings may still come from the widget request.
 	 */
 	private function bewia_get_server_settings_for_request() {
-		$posted = $this->bewia_get_settings_from_post();
 		$server = class_exists( __NAMESPACE__ . '\BEWIA_AI_Upsell_Analytics' ) ? BEWIA_AI_Upsell_Analytics::get_saved_settings() : array();
 		$server = BEWIA_AI_Upsell_Engine::normalize_settings( is_array( $server ) ? $server : array() );
 
-		foreach ( array( 'enable_ai', 'mode', 'layout', 'required_cart_category_ids', 'exclude_cart_products', 'minimum_cart_total', 'maximum_cart_total', 'customer_status', 'device_type', 'maximum_product_price_ratio', 'priority_scores', 'show_dismiss', 'success_message', 'collapse_delay_ms', 'fallback_title', 'fallback_description', 'button_text', 'provider_source' ) as $key ) {
-			if ( array_key_exists( $key, $posted ) ) { $server[ $key ] = $posted[ $key ]; }
-		}
-
 		$variant = BEWIA_AI_Upsell_Experiments::assign_variant( $server['campaign_key'], '', $server['variants'] );
 		return $this->bewia_apply_variant( $server, $variant );
+	}
+
+	private function bewia_sign_offer( $offer_id ) {
+		$secret = function_exists( 'wp_salt' ) ? wp_salt( 'auth' ) : ( defined( 'AUTH_KEY' ) ? AUTH_KEY : 'bewia-offer' );
+		return hash_hmac( 'sha256', (string) $offer_id, $secret );
 	}
 
 	private function bewia_get_frontend_signals_from_post() {
