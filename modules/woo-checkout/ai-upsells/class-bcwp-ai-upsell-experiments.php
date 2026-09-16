@@ -68,7 +68,25 @@ class BEWIA_AI_Upsell_Experiments {
 		if ( '' === $session_id || empty( $offer['product_id'] ) ) { return false; }
 		$offers = self::get_session_offers();
 		$key = self::offer_key( $offer );
-		return isset( $offers[ $key ] ) && absint( $offers[ $key ]['product_id'] ) === absint( $offer['product_id'] );
+		return isset( $offers[ $key ] ) && self::offer_matches( $offers[ $key ], $offer );
+	}
+
+	public static function get_emitted_offer( $session_id, $offer_id ) {
+		$offer_id = sanitize_key( (string) $offer_id );
+		if ( '' === sanitize_text_field( (string) $session_id ) || '' === $offer_id ) { return array(); }
+		foreach ( self::get_session_offers() as $offer ) {
+			if ( isset( $offer['offer_id'] ) && hash_equals( $offer_id, sanitize_key( $offer['offer_id'] ) ) ) { return $offer; }
+		}
+		return array();
+	}
+
+	private static function offer_matches( $stored, $candidate ) {
+		foreach ( array( 'product_id', 'campaign_key', 'variant_id', 'offer_id', 'offer_signature' ) as $key ) {
+			$stored_value = isset( $stored[ $key ] ) ? $stored[ $key ] : '';
+			$candidate_value = isset( $candidate[ $key ] ) ? $candidate[ $key ] : '';
+			if ( 'product_id' === $key ? absint( $stored_value ) !== absint( $candidate_value ) : ! hash_equals( (string) $stored_value, (string) $candidate_value ) ) { return false; }
+		}
+		return true;
 	}
 
 	private static function offer_key( $offer ) {

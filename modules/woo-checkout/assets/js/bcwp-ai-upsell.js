@@ -213,6 +213,8 @@ jQuery(function ($) {
 			settings: parseSettings($widget)
 		}).done(function (response) {
 			if (response && response.success && response.data && response.data.product) {
+				$widget.data('bewiaOfferId', response.data.offer_id || '');
+				$widget.data('bewiaOfferSignature', response.data.offer_signature || '');
 				renderProduct($widget, response.data.product);
 				setStatus($widget, response.data.message || '', false);
 				return;
@@ -304,6 +306,8 @@ jQuery(function ($) {
 			nonce: BEWIAUpsell.nonce,
 			product_id: productId,
 			quantity: quantity || 1,
+			offer_id: $widget.data('bewiaOfferId') || '',
+			offer_signature: $widget.data('bewiaOfferSignature') || '',
 			settings: parseSettings($widget)
 		}).done(function (response) {
 			if (response && response.success) {

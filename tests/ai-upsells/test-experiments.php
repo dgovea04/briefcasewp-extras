@@ -41,8 +41,10 @@ $invalid = BEWIA_AI_Upsell_Experiments::normalize_variants( array( array( 'varia
 bewia_experiment_assert( count( $invalid ) === 1 && $invalid[0]['variant_id'] === 'bad' && $invalid[0]['product_ids'] === array( 15 ) && $invalid[0]['layout'] === 'card' && $invalid[0]['copy']['title'] === 'Safe', 'Invalid variant fields must be normalized safely.' );
 bewia_experiment_assert( BEWIA_AI_Upsell_Experiments::assign_variant( '', 'session-123', $variants ) === array(), 'Disabled experiments must not assign a variant.' );
 
-BEWIA_AI_Upsell_Experiments::register_emitted_offer( 'session-123', array( 'product_id' => 10, 'campaign_key' => 'spring-sale', 'variant_id' => 'control' ) );
-bewia_experiment_assert( BEWIA_AI_Upsell_Experiments::is_emitted_offer_valid( 'session-123', array( 'product_id' => 10, 'campaign_key' => 'spring-sale', 'variant_id' => 'control' ) ), 'A product emitted for the same session/campaign/variant is accepted.' );
-bewia_experiment_assert( ! BEWIA_AI_Upsell_Experiments::is_emitted_offer_valid( 'session-123', array( 'product_id' => 20, 'campaign_key' => 'spring-sale', 'variant_id' => 'control' ) ), 'A product not emitted for the session is rejected server-side.' );
+$emitted = array( 'product_id' => 10, 'campaign_key' => 'spring-sale', 'variant_id' => 'control', 'offer_id' => 'offer-10', 'offer_signature' => 'signature-10' );
+BEWIA_AI_Upsell_Experiments::register_emitted_offer( 'session-123', $emitted );
+bewia_experiment_assert( BEWIA_AI_Upsell_Experiments::is_emitted_offer_valid( 'session-123', $emitted ), 'A valid emitted offer is accepted.' );
+bewia_experiment_assert( ! BEWIA_AI_Upsell_Experiments::is_emitted_offer_valid( 'session-123', array_merge( $emitted, array( 'offer_signature' => 'altered' ) ) ), 'An altered offer signature is rejected.' );
+bewia_experiment_assert( ! BEWIA_AI_Upsell_Experiments::is_emitted_offer_valid( 'session-123', array_merge( $emitted, array( 'product_id' => 20 ) ) ), 'A different offer identity is rejected.' );
 
 echo "Experiment tests passed.\n";

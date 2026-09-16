@@ -90,6 +90,8 @@ class BEWIA_AI_Upsell_Ajax {
 
 		$product_id = isset( $_POST['product_id'] ) ? absint( wp_unslash( $_POST['product_id'] ) ) : 0;
 		$quantity   = isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : 1;
+		$offer_id = isset( $_POST['offer_id'] ) ? sanitize_key( wp_unslash( $_POST['offer_id'] ) ) : '';
+		$offer_signature = isset( $_POST['offer_signature'] ) ? sanitize_text_field( wp_unslash( $_POST['offer_signature'] ) ) : '';
 
 		if ( $product_id <= 0 ) {
 			$this->bewia_log_failed_event( 0 );
@@ -105,11 +107,15 @@ class BEWIA_AI_Upsell_Ajax {
 			$quantity = 1;
 		}
 
-		$settings = $this->bewia_get_settings_from_post();
-		if ( ! BEWIA_AI_Upsell_Experiments::is_emitted_offer_valid( BEWIA_AI_Upsell_Analytics::get_session_id(), array( 'product_id' => $product_id, 'campaign_key' => $settings['campaign_key'], 'variant_id' => isset( $settings['variant_id'] ) ? $settings['variant_id'] : '' ) ) ) {
-			$this->bewia_log_failed_event( $product_id, $settings );
+		$session_id = BEWIA_AI_Upsell_Analytics::get_session_id();
+		$emitted_offer = BEWIA_AI_Upsell_Experiments::get_emitted_offer( $session_id, $offer_id );
+		if ( empty( $offer_signature ) || ! hash_equals( $this->bewia_sign_offer( $offer_id ), $offer_signature ) || empty( $emitted_offer ) || ! BEWIA_AI_Upsell_Experiments::is_emitted_offer_valid( $session_id, array_merge( $emitted_offer, array( 'product_id' => $product_id, 'offer_id' => $offer_id, 'offer_signature' => $offer_signature ) ) ) ) {
+			$this->bewia_log_failed_event( $product_id );
 			wp_send_json_error( array( 'message' => esc_html__( 'This upsell offer is no longer valid.', 'bew-extras' ) ), 403 );
 		}
+		$settings = $this->bewia_get_server_settings_for_request();
+		$settings['campaign_key'] = $emitted_offer['campaign_key'];
+		$settings['variant_id'] = $emitted_offer['variant_id'];
 		$settings['suppressed_product_ids'] = array_values( array_unique( array_merge( $settings['suppressed_product_ids'], $this->bewia_get_suppressed_product_ids() ) ) );
 
 		if ( $this->bewia_product_exists_in_cart( $product_id ) && ( ! isset( $settings['exclude_cart_products'] ) || 'yes' === $settings['exclude_cart_products'] ) ) {
@@ -133,7 +139,7 @@ class BEWIA_AI_Upsell_Ajax {
 			'campaign_key' => $settings['campaign_key'],
 			'variant_id' => isset( $settings['variant_id'] ) ? $settings['variant_id'] : '',
 			'session_id' => BEWIA_AI_Upsell_Analytics::get_session_id(),
-			'offer_id' => sha1( BEWIA_AI_Upsell_Analytics::get_session_id() . '|' . $settings['campaign_key'] . '|' . ( isset( $settings['variant_id'] ) ? $settings['variant_id'] : '' ) . '|' . $product_id ),
+			'offer_id' => $emitted_offer['offer_id'],
 		) );
 		$cart_item_key = $wc->cart->add_to_cart( $product_id, $quantity, 0, array(), array( '_bewia_offer_identity' => $offer_identity ) );
 
