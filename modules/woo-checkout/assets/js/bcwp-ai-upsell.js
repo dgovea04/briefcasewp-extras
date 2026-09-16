@@ -9,6 +9,7 @@ jQuery(function ($) {
 
 	var checkoutStartedAt = Math.floor(Date.now() / 1000);
 	var maxScrollDepth = 0;
+	var checkoutRefreshToken = 0;
 	var selectors = {
 		widget: '.bewia-ai-smart-wrapper',
 		list: '.bewia-ai-smart-upsells__list',
@@ -52,6 +53,20 @@ jQuery(function ($) {
 		var $status = $widget.find(selectors.status);
 		$status.text(message || '');
 		$status.toggleClass('is-error', !!isError);
+	}
+
+	function safeText(value) {
+		return $('<div>').text(value == null ? '' : String(value)).html();
+	}
+
+	function getCopy(product) {
+		var copy = product && product.copy && typeof product.copy === 'object' ? product.copy : {};
+		return {
+			title: copy.title || product.title || '',
+			description: copy.description || product.short_description || '',
+			cta: copy.cta || product.add_to_cart_text || 'Add this offer',
+			urgency: copy.urgency || product.urgency || ''
+		};
 	}
 
 	function setAcceptedState($widget, accepted) {
@@ -108,6 +123,7 @@ jQuery(function ($) {
 
 	function renderProduct($widget, product) {
 		var html = '';
+		var copy;
 
 		if (!product || !product.product_id) {
 			$widget.find(selectors.list).empty();
@@ -122,12 +138,16 @@ jQuery(function ($) {
 			return;
 		}
 
-		html += '<div class="bewia-ai-smart-upsells__item is-selected" data-product-id="' + product.product_id + '">';
+		copy = getCopy(product);
+		html += '<div class="bewia-ai-smart-upsells__item is-selected" data-product-id="' + parseInt(product.product_id, 10) + '">';
 		html += '<div class="bewia-ai-smart-upsells__media">' + (product.image_html || '') + '</div>';
 		html += '<div class="bewia-ai-smart-upsells__content">';
-		html += '<div class="bewia-ai-smart-upsells__title">' + (product.title || '') + '</div>';
+		html += '<div class="bewia-ai-smart-upsells__title">' + safeText(copy.title) + '</div>';
 		html += '<div class="bewia-ai-smart-upsells__price">' + (product.price_html || '') + '</div>';
-		html += '<div class="bewia-ai-smart-upsells__description">' + (product.short_description || '') + '</div>';
+		html += '<div class="bewia-ai-smart-upsells__description">' + safeText(copy.description) + '</div>';
+		if (copy.urgency) {
+			html += '<div class="bewia-ai-smart-upsells__urgency" role="status">' + safeText(copy.urgency) + '</div>';
+		}
 		html += '</div>';
 		html += '</div>';
 
@@ -136,7 +156,7 @@ jQuery(function ($) {
 			.prop('disabled', false)
 			.attr('data-product-id', product.product_id)
 			.attr('data-quantity', 1)
-			.text(product.add_to_cart_text || 'Add this offer')
+			.text(copy.cta)
 			.show();
 		if (parseSettings($widget).show_dismiss === 'yes') {
 			$widget.find(selectors.dismiss)
@@ -169,7 +189,7 @@ jQuery(function ($) {
 		}
 
 		$widget.addClass('bewia-has-success');
-		$widget.find(selectors.list).html('<div class="bewia-ai-upsell-success">' + (message || BEWIAUpsell.successText || 'Offer added to cart.') + '</div>');
+		$widget.find(selectors.list).html('<div class="bewia-ai-upsell-success">' + safeText(message || BEWIAUpsell.successText || 'Offer added to cart.') + '</div>');
 		$widget.find(selectors.dismiss).hide();
 
 		window.setTimeout(function () {
@@ -210,10 +230,12 @@ jQuery(function ($) {
 
 	function requestUpsell($widget) {
 		var settings = parseSettings($widget);
+		var requestToken = checkoutRefreshToken;
 
-		if (isAccepted($widget)) {
+		if (isAccepted($widget) || $widget.data('bewiaRequestInFlight')) {
 			return;
 		}
+		$widget.data('bewiaRequestInFlight', true);
 
 		setStatus($widget, BEWIAUpsell.loadingText || 'Loading recommendation...', false);
 		renderSkeleton($widget);
@@ -226,6 +248,9 @@ jQuery(function ($) {
 			scroll_depth: getScrollDepth(),
 			checkout_started_at: checkoutStartedAt
 		}).done(function (response) {
+			if (requestToken !== checkoutRefreshToken) {
+				return;
+			}
 			if (response && response.success && response.data && response.data.product) {
 				if (response.data.provider_source) {
 					settings.provider_source = response.data.provider_source;
@@ -244,6 +269,9 @@ jQuery(function ($) {
 			clearUpsell($widget, response && response.data && response.data.message ? response.data.message : (BEWIAUpsell.emptyText || 'No recommendation available.'), false);
 			$widget.removeClass('bewia-ai-upsell-loading');
 		}).fail(function (xhr) {
+			if (requestToken !== checkoutRefreshToken) {
+				return;
+			}
 			var response = xhr && xhr.responseJSON ? xhr.responseJSON : null;
 			var message = response && response.data && response.data.message ? response.data.message : '';
 
@@ -256,6 +284,10 @@ jQuery(function ($) {
 			clearUpsell($widget, message || (BEWIAUpsell.errorText || 'Unable to load recommendation.'), true);
 		}).always(function () {
 			$widget.removeClass('is-loading');
+			$widget.data('bewiaRequestInFlight', false);
+			if (requestToken !== checkoutRefreshToken && !isAccepted($widget)) {
+				requestUpsell($widget);
+			}
 		});
 	}
 
@@ -342,6 +374,7 @@ jQuery(function ($) {
 	});
 
 	$(document.body).on('updated_checkout', function () {
+		checkoutRefreshToken++;
 		$(selectors.widget).each(function () {
 			var $widget = $(this);
 

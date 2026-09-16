@@ -154,6 +154,14 @@
 	color: #667085;
 }
 
+.bewia-ai-smart-upsells__urgency {
+	margin-top: 8px;
+	font-size: 13px;
+	line-height: 1.4;
+	font-weight: 600;
+	color: #9b3d2f;
+}
+
 .bewia-ai-upsell-checkbox input[type='checkbox'] {
 	width: 18px;
 	height: 18px;
