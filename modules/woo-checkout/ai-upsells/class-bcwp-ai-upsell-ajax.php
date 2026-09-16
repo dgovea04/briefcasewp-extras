@@ -117,7 +117,14 @@ class BEWIA_AI_Upsell_Ajax {
 			$this->bewia_send_rotated_response( $settings, esc_html__( 'This product cannot be added.', 'bew-extras' ), 400 );
 		}
 
-		$cart_item_key = $wc->cart->add_to_cart( $product_id, $quantity );
+		$offer_identity = BEWIA_AI_Upsell_Analytics::normalize_offer_identity( array(
+			'product_id' => $product_id,
+			'mode' => $settings['mode'],
+			'provider_source' => $settings['provider_source'],
+			'campaign_key' => $settings['campaign_key'],
+			'variant_id' => isset( $settings['variant_id'] ) ? $settings['variant_id'] : '',
+		) );
+		$cart_item_key = $wc->cart->add_to_cart( $product_id, $quantity, 0, array(), array( '_bewia_offer_identity' => $offer_identity ) );
 
 		if ( ! $cart_item_key ) {
 			$this->bewia_suppress_product( $product_id );
@@ -264,6 +271,10 @@ class BEWIA_AI_Upsell_Ajax {
 			'layout'     => isset( $settings['layout'] ) ? sanitize_text_field( (string) $settings['layout'] ) : '',
 			'mode'       => isset( $settings['mode'] ) ? sanitize_text_field( (string) $settings['mode'] ) : '',
 			'provider_source' => isset( $settings['provider_source'] ) ? sanitize_text_field( (string) $settings['provider_source'] ) : '',
+			'confidence' => isset( $settings['confidence'] ) ? (float) $settings['confidence'] : null,
+			'customer_type' => isset( $settings['customer_type'] ) ? sanitize_key( $settings['customer_type'] ) : '',
+			'device_type' => isset( $settings['device_type'] ) ? sanitize_key( $settings['device_type'] ) : '',
+			'country' => isset( $settings['country'] ) ? sanitize_text_field( $settings['country'] ) : '',
 			'campaign_key' => isset( $settings['campaign_key'] ) ? sanitize_key( $settings['campaign_key'] ) : '',
 			'variant_id' => isset( $settings['variant_id'] ) ? sanitize_key( $settings['variant_id'] ) : '',
 			'revenue'    => null === $revenue ? null : (float) $revenue,

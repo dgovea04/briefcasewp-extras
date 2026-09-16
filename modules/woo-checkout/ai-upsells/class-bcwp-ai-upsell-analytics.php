@@ -13,6 +13,9 @@ class BEWIA_AI_Upsell_Analytics {
 
 	public function __construct() {
 		add_action( 'woocommerce_checkout_order_processed', array( $this, 'bewia_track_order_processed' ), 10, 3 );
+		add_action( 'woocommerce_payment_complete', array( $this, 'confirm_order_revenue' ), 10, 1 );
+		add_action( 'woocommerce_order_status_completed', array( $this, 'confirm_order_revenue' ), 10, 1 );
+		add_action( 'woocommerce_checkout_create_order_line_item', array( $this, 'copy_offer_identity_to_order_item' ), 10, 4 );
 		add_action( 'admin_menu', array( $this, 'register_admin_page' ), 60 );
 	}
 
@@ -58,10 +61,12 @@ class BEWIA_AI_Upsell_Analytics {
 
 	public static function ensure_table() {
 		$table_exists            = self::table_exists();
-		$provider_column_exists  = $table_exists ? self::column_exists( 'provider_source' ) : false;
-
-		$campaign_column_exists  = $table_exists ? self::column_exists( 'campaign_key' ) : false;
-		if ( $table_exists && $provider_column_exists && $campaign_column_exists ) {
+		$required_columns = array( 'provider_source', 'campaign_key', 'variant_id', 'confidence', 'customer_type', 'device_type', 'country', 'order_id' );
+		$schema_complete = $table_exists;
+		foreach ( $required_columns as $column ) {
+			if ( ! $table_exists || ! self::column_exists( $column ) ) { $schema_complete = false; break; }
+		}
+		if ( $schema_complete ) {
 			return true;
 		}
 
@@ -74,10 +79,10 @@ class BEWIA_AI_Upsell_Analytics {
 					$created ? 'created' : 'failed',
 					MINUTE_IN_SECONDS * 5
 				);
-			} elseif ( ! $provider_column_exists && $created ) {
+			} elseif ( $created ) {
 				set_transient(
 					self::SCHEMA_NOTICE_TRANSIENT,
-					'provider_source_added',
+					'analytics_schema_upgraded',
 					MINUTE_IN_SECONDS * 5
 				);
 			}
@@ -107,8 +112,13 @@ class BEWIA_AI_Upsell_Analytics {
 			provider_source varchar(50) NOT NULL DEFAULT '',
 			campaign_key varchar(100) NOT NULL DEFAULT '',
 			variant_id varchar(100) NOT NULL DEFAULT '',
+			confidence decimal(5,4) NULL,
+			customer_type varchar(30) NOT NULL DEFAULT '',
+			device_type varchar(30) NOT NULL DEFAULT '',
+			country varchar(10) NOT NULL DEFAULT '',
 			event varchar(20) NOT NULL DEFAULT '',
 			revenue decimal(18,2) NULL,
+			order_id bigint(20) unsigned NULL,
 			PRIMARY KEY  (id),
 			KEY event (event),
 			KEY product_id (product_id),
@@ -164,6 +174,11 @@ class BEWIA_AI_Upsell_Analytics {
 			'provider_source' => '',
 			'campaign_key' => '',
 			'variant_id' => '',
+			'confidence' => null,
+			'customer_type' => '',
+			'device_type' => '',
+			'country' => '',
+			'order_id' => null,
 			'revenue'    => null,
 		);
 
@@ -185,11 +200,16 @@ class BEWIA_AI_Upsell_Analytics {
 			'provider_source' => sanitize_text_field( (string) $data['provider_source'] ),
 			'campaign_key' => sanitize_key( (string) $data['campaign_key'] ),
 			'variant_id' => sanitize_key( (string) $data['variant_id'] ),
+			'confidence' => null === $data['confidence'] ? null : max( 0, min( 1, (float) $data['confidence'] ) ),
+			'customer_type' => sanitize_key( (string) $data['customer_type'] ),
+			'device_type' => sanitize_key( (string) $data['device_type'] ),
+			'country' => strtoupper( sanitize_text_field( (string) $data['country'] ) ),
 			'event'      => $event,
 			'revenue'    => null === $data['revenue'] ? null : round( (float) $data['revenue'], 2 ),
+			'order_id'   => null === $data['order_id'] ? null : absint( $data['order_id'] ),
 		);
 
-		$formats = array( '%s', '%s', '%d', '%d', '%f', '%s', '%s', '%s', '%s', '%s', '%s', '%f' );
+		$formats = array( '%s', '%s', '%d', '%d', '%f', '%s', '%s', '%s', '%s', '%s', '%f', '%s', '%s', '%s', '%s', '%f', '%d' );
 
 		if ( null === $insert['user_id'] ) {
 			$insert['user_id'] = null;
@@ -371,7 +391,7 @@ class BEWIA_AI_Upsell_Analytics {
 		}
 
 		$table_name = self::get_table_name();
-		$allowed_dimensions = array( 'layout', 'mode', 'provider_source' );
+		$allowed_dimensions = array( 'layout', 'mode', 'provider_source', 'campaign_key', 'variant_id', 'customer_type', 'device_type', 'country' );
 		$dimension  = in_array( $dimension, $allowed_dimensions, true ) ? $dimension : 'layout';
 
 		if ( 'provider_source' === $dimension && ! self::column_exists( 'provider_source' ) ) {
@@ -416,7 +436,7 @@ class BEWIA_AI_Upsell_Analytics {
 		$provider_source_sql = $select_provider_source ? 'provider_source' : "'' AS provider_source";
 
 		$query = $wpdb->prepare(
-			"SELECT created_at, session_id, user_id, product_id, cart_total, layout, mode, {$provider_source_sql}, event, revenue
+			"SELECT created_at, session_id, user_id, product_id, cart_total, layout, mode, {$provider_source_sql}, campaign_key, variant_id, confidence, customer_type, device_type, country, event, revenue, order_id
 			FROM {$table_name}
 			{$where}
 			ORDER BY created_at DESC, id DESC
@@ -680,6 +700,9 @@ class BEWIA_AI_Upsell_Analytics {
 
 			<h2 style="margin-top:24px;"><?php echo esc_html__( 'Provider Breakdown', 'bew-extras' ); ?></h2>
 			<?php $this->render_dimension_table( self::get_dimension_breakdown( 'provider_source', $filters ), __( 'Provider', 'bew-extras' ) ); ?>
+
+			<h2 style="margin-top:24px;"><?php echo esc_html__( 'Variant Breakdown', 'bew-extras' ); ?></h2>
+			<?php $this->render_dimension_table( self::get_dimension_breakdown( 'variant_id', $filters ), __( 'Variant', 'bew-extras' ) ); ?>
 		</div>
 		<?php
 	}
@@ -762,7 +785,7 @@ class BEWIA_AI_Upsell_Analytics {
 		header( 'Content-Disposition: attachment; filename=bew-ai-upsells-' . gmdate( 'Y-m-d' ) . '.csv' );
 
 		$output = fopen( 'php://output', 'w' );
-		fputcsv( $output, array( 'created_at', 'session_id', 'user_id', 'product_id', 'product_name', 'cart_total', 'layout', 'mode', 'provider_source', 'event', 'revenue' ) );
+		fputcsv( $output, array( 'created_at', 'session_id', 'user_id', 'product_id', 'product_name', 'cart_total', 'layout', 'mode', 'provider_source', 'campaign_key', 'variant_id', 'confidence', 'customer_type', 'device_type', 'country', 'event', 'revenue', 'order_id' ) );
 
 		foreach ( $rows as $row ) {
 			$product_id   = isset( $row['product_id'] ) ? absint( $row['product_id'] ) : 0;
@@ -781,8 +804,15 @@ class BEWIA_AI_Upsell_Analytics {
 					isset( $row['layout'] ) ? $row['layout'] : '',
 					isset( $row['mode'] ) ? $row['mode'] : '',
 					isset( $row['provider_source'] ) ? $row['provider_source'] : '',
+					isset( $row['campaign_key'] ) ? $row['campaign_key'] : '',
+					isset( $row['variant_id'] ) ? $row['variant_id'] : '',
+					isset( $row['confidence'] ) ? $row['confidence'] : '',
+					isset( $row['customer_type'] ) ? $row['customer_type'] : '',
+					isset( $row['device_type'] ) ? $row['device_type'] : '',
+					isset( $row['country'] ) ? $row['country'] : '',
 					isset( $row['event'] ) ? $row['event'] : '',
 					isset( $row['revenue'] ) ? $row['revenue'] : '',
+					isset( $row['order_id'] ) ? $row['order_id'] : '',
 				)
 			);
 		}
@@ -813,14 +843,57 @@ class BEWIA_AI_Upsell_Analytics {
 			return;
 		}
 
-		$accepted = isset( $_POST['bewia_ai_upsell_ids'] ) ? wp_unslash( $_POST['bewia_ai_upsell_ids'] ) : '';
-
-		if ( empty( $accepted ) ) {
-			return;
+		$accepted = isset( $_POST['bewia_ai_upsell_offers'] ) ? wp_unslash( $_POST['bewia_ai_upsell_offers'] ) : array();
+		$accepted = is_array( $accepted ) ? array_map( array( __CLASS__, 'normalize_offer_identity' ), $accepted ) : array();
+		if ( empty( $accepted ) && isset( $_POST['bewia_ai_upsell_ids'] ) ) {
+			$accepted = array_map( function( $id ) { return self::normalize_offer_identity( array( 'product_id' => $id ) ); }, explode( ',', sanitize_text_field( wp_unslash( $_POST['bewia_ai_upsell_ids'] ) ) ) );
 		}
-
-		$order->update_meta_data( '_bewia_ai_smart_upsells', sanitize_text_field( $accepted ) );
+		if ( ! empty( $accepted ) ) { $order->update_meta_data( '_bewia_ai_smart_upsells', wp_json_encode( $accepted ) ); }
 		$order->save();
+	}
+
+	public static function normalize_offer_identity( $identity ) {
+		$identity = is_array( $identity ) ? $identity : array();
+		return array( 'product_id' => absint( isset( $identity['product_id'] ) ? $identity['product_id'] : 0 ), 'mode' => sanitize_key( isset( $identity['mode'] ) ? $identity['mode'] : '' ), 'provider_source' => sanitize_key( isset( $identity['provider_source'] ) ? $identity['provider_source'] : '' ), 'campaign_key' => sanitize_key( isset( $identity['campaign_key'] ) ? $identity['campaign_key'] : '' ), 'variant_id' => sanitize_key( isset( $identity['variant_id'] ) ? $identity['variant_id'] : '' ), 'confidence' => isset( $identity['confidence'] ) ? max( 0, min( 1, (float) $identity['confidence'] ) ) : null );
+	}
+
+	public static function is_confirmable_order_status( $status ) { return in_array( sanitize_key( $status ), array( 'processing', 'completed' ), true ); }
+
+	public static function get_confirmable_offer_lines( $items ) {
+		$lines = array();
+		foreach ( is_array( $items ) ? $items : array() as $item ) {
+			$identity = isset( $item['identity'] ) ? self::normalize_offer_identity( $item['identity'] ) : array();
+			if ( empty( $identity['product_id'] ) || empty( $item['line_total'] ) ) { continue; }
+			$lines[] = array( 'identity' => $identity, 'revenue' => round( max( 0, (float) $item['line_total'] ), 2 ) );
+		}
+		return $lines;
+	}
+
+	public function copy_offer_identity_to_order_item( $item, $cart_item_key, $values, $order ) {
+		if ( empty( $values['_bewia_offer_identity'] ) || ! is_array( $values['_bewia_offer_identity'] ) ) { return; }
+		$item->add_meta_data( '_bewia_offer_identity', wp_json_encode( self::normalize_offer_identity( $values['_bewia_offer_identity'] ) ), true );
+	}
+
+	public function confirm_order_revenue( $order_id, $order = null ) {
+		$order = $order ? $order : ( function_exists( 'wc_get_order' ) ? wc_get_order( $order_id ) : false );
+		if ( ! $order || ! self::is_confirmable_order_status( $order->get_status() ) || $order->get_meta( '_bewia_ai_revenue_confirmed' ) ) { return false; }
+		foreach ( $order->get_items() as $item ) {
+			$raw = $item->get_meta( '_bewia_offer_identity' );
+			$identity = json_decode( (string) $raw, true );
+			if ( ! is_array( $identity ) ) { continue; }
+			$identity = self::normalize_offer_identity( $identity );
+			$this->update_confirmed_revenue( $order_id, $identity, (float) $item->get_total() );
+		}
+		$order->update_meta_data( '_bewia_ai_revenue_confirmed', 'yes' ); $order->save();
+		return true;
+	}
+
+	private function update_confirmed_revenue( $order_id, $identity, $revenue ) {
+		global $wpdb; if ( ! self::ensure_table() ) { return false; }
+		$where = array( 'event' => 'accepted', 'product_id' => $identity['product_id'], 'order_id' => 0 );
+		$row = $wpdb->get_row( $wpdb->prepare( "SELECT id FROM " . self::get_table_name() . " WHERE event=%s AND product_id=%d AND order_id IS NULL ORDER BY id DESC LIMIT 1", 'accepted', $identity['product_id'] ), ARRAY_A );
+		if ( empty( $row ) ) { return false; }
+		return false !== $wpdb->update( self::get_table_name(), array( 'revenue' => round( max( 0, $revenue ), 2 ), 'order_id' => absint( $order_id ) ), array( 'id' => absint( $row['id'] ) ), array( '%f', '%d' ), array( '%d' ) );
 	}
 
 	public static function get_session_id() {
@@ -898,8 +971,8 @@ class BEWIA_AI_Upsell_Analytics {
 
 		delete_transient( self::SCHEMA_NOTICE_TRANSIENT );
 
-		if ( 'provider_source_added' === $notice ) {
-			echo '<div class="notice notice-success is-dismissible"><p>' . esc_html__( 'The AI upsell analytics schema was upgraded successfully to support provider-source tracking.', 'bew-extras' ) . '</p></div>';
+		if ( in_array( $notice, array( 'provider_source_added', 'analytics_schema_upgraded' ), true ) ) {
+			echo '<div class="notice notice-success is-dismissible"><p>' . esc_html__( 'The AI upsell analytics schema was upgraded successfully.', 'bew-extras' ) . '</p></div>';
 		}
 	}
 
