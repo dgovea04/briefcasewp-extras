@@ -5,6 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 class BEWIA_AI_Upsell_Experiments {
 	const SESSION_KEY = 'bewia_ai_upsell_variants';
+	const OFFER_KEY = 'bewia_ai_upsell_emitted_offers';
 
 	public static function normalize_variants( $variants ) {
 		if ( ! is_array( $variants ) ) { return array(); }
@@ -42,6 +43,41 @@ class BEWIA_AI_Upsell_Experiments {
 		$stored[ $campaign_key ] = array( 'session_id' => $session_id, 'variant_id' => $assigned['variant_id'] );
 		self::set_session_assignments( $stored );
 		return $assigned;
+	}
+
+	public static function register_emitted_offer( $session_id, $offer ) {
+		$session_id = sanitize_text_field( (string) $session_id );
+		$offer = is_array( $offer ) ? $offer : array();
+		if ( '' === $session_id || empty( $offer['product_id'] ) ) { return false; }
+		$offers = self::get_session_offers();
+		$key = self::offer_key( $offer );
+		$offers[ $key ] = array(
+			'product_id' => absint( $offer['product_id'] ),
+			'campaign_key' => sanitize_key( isset( $offer['campaign_key'] ) ? $offer['campaign_key'] : '' ),
+			'variant_id' => sanitize_key( isset( $offer['variant_id'] ) ? $offer['variant_id'] : '' ),
+		);
+		self::set_session_offers( $offers );
+		return true;
+	}
+
+	public static function is_emitted_offer_valid( $session_id, $offer ) {
+		$session_id = sanitize_text_field( (string) $session_id );
+		$offer = is_array( $offer ) ? $offer : array();
+		if ( '' === $session_id || empty( $offer['product_id'] ) ) { return false; }
+		$offers = self::get_session_offers();
+		$key = self::offer_key( $offer );
+		return isset( $offers[ $key ] ) && absint( $offers[ $key ]['product_id'] ) === absint( $offer['product_id'] );
+	}
+
+	private static function offer_key( $offer ) {
+		return sanitize_key( isset( $offer['campaign_key'] ) ? $offer['campaign_key'] : '' ) . '|' . sanitize_key( isset( $offer['variant_id'] ) ? $offer['variant_id'] : '' ) . '|' . absint( isset( $offer['product_id'] ) ? $offer['product_id'] : 0 );
+	}
+	private static function get_session_offers() {
+		if ( function_exists( 'WC' ) && class_exists( 'WooCommerce' ) ) { $wc = WC(); if ( $wc && isset( $wc->session ) && method_exists( $wc->session, 'get' ) ) { $value = $wc->session->get( self::OFFER_KEY, array() ); return is_array( $value ) ? $value : array(); } }
+		return array();
+	}
+	private static function set_session_offers( $value ) {
+		if ( function_exists( 'WC' ) && class_exists( 'WooCommerce' ) ) { $wc = WC(); if ( $wc && isset( $wc->session ) && method_exists( $wc->session, 'set' ) ) { $wc->session->set( self::OFFER_KEY, $value ); } }
 	}
 
 	private static function get_session_assignments() {

@@ -61,7 +61,7 @@ class BEWIA_AI_Upsell_Analytics {
 
 	public static function ensure_table() {
 		$table_exists            = self::table_exists();
-		$required_columns = array( 'provider_source', 'campaign_key', 'variant_id', 'confidence', 'customer_type', 'device_type', 'country', 'order_id' );
+		$required_columns = array( 'provider_source', 'campaign_key', 'variant_id', 'offer_id', 'confidence', 'customer_type', 'device_type', 'country', 'order_id' );
 		$schema_complete = $table_exists;
 		foreach ( $required_columns as $column ) {
 			if ( ! $table_exists || ! self::column_exists( $column ) ) { $schema_complete = false; break; }
@@ -112,6 +112,7 @@ class BEWIA_AI_Upsell_Analytics {
 			provider_source varchar(50) NOT NULL DEFAULT '',
 			campaign_key varchar(100) NOT NULL DEFAULT '',
 			variant_id varchar(100) NOT NULL DEFAULT '',
+			offer_id varchar(191) NOT NULL DEFAULT '',
 			confidence decimal(5,4) NULL,
 			customer_type varchar(30) NOT NULL DEFAULT '',
 			device_type varchar(30) NOT NULL DEFAULT '',
@@ -174,6 +175,7 @@ class BEWIA_AI_Upsell_Analytics {
 			'provider_source' => '',
 			'campaign_key' => '',
 			'variant_id' => '',
+			'offer_id' => '',
 			'confidence' => null,
 			'customer_type' => '',
 			'device_type' => '',
@@ -200,6 +202,7 @@ class BEWIA_AI_Upsell_Analytics {
 			'provider_source' => sanitize_text_field( (string) $data['provider_source'] ),
 			'campaign_key' => sanitize_key( (string) $data['campaign_key'] ),
 			'variant_id' => sanitize_key( (string) $data['variant_id'] ),
+			'offer_id' => sanitize_key( (string) $data['offer_id'] ),
 			'confidence' => null === $data['confidence'] ? null : max( 0, min( 1, (float) $data['confidence'] ) ),
 			'customer_type' => sanitize_key( (string) $data['customer_type'] ),
 			'device_type' => sanitize_key( (string) $data['device_type'] ),
@@ -209,7 +212,7 @@ class BEWIA_AI_Upsell_Analytics {
 			'order_id'   => null === $data['order_id'] ? null : absint( $data['order_id'] ),
 		);
 
-		$formats = array( '%s', '%s', '%d', '%d', '%f', '%s', '%s', '%s', '%s', '%s', '%f', '%s', '%s', '%s', '%s', '%f', '%d' );
+		$formats = array( '%s', '%s', '%d', '%d', '%f', '%s', '%s', '%s', '%s', '%s', '%s', '%f', '%s', '%s', '%s', '%s', '%f', '%d' );
 
 		if ( null === $insert['user_id'] ) {
 			$insert['user_id'] = null;
@@ -285,7 +288,7 @@ class BEWIA_AI_Upsell_Analytics {
 
 		$table_name = self::get_table_name();
 		$where      = self::build_where_sql( $filters );
-		$rows       = $wpdb->get_results( "SELECT event, COUNT(*) AS total, COALESCE(SUM(revenue), 0) AS revenue FROM {$table_name} {$where} GROUP BY event", ARRAY_A );
+		$rows       = $wpdb->get_results( "SELECT event, COUNT(*) AS total, COALESCE(SUM(CASE WHEN event = 'accepted' AND order_id IS NOT NULL THEN revenue ELSE 0 END), 0) AS revenue FROM {$table_name} {$where} GROUP BY event", ARRAY_A );
 		$summary    = array(
 			'shown'    => 0,
 			'rendered' => 0,
@@ -369,7 +372,7 @@ class BEWIA_AI_Upsell_Analytics {
 				SUM(CASE WHEN event = 'accepted' THEN 1 ELSE 0 END) AS accepted,
 				SUM(CASE WHEN event = 'dismissed' THEN 1 ELSE 0 END) AS dismissed,
 				SUM(CASE WHEN event = 'failed' THEN 1 ELSE 0 END) AS failed,
-				COALESCE(SUM(CASE WHEN event = 'accepted' THEN revenue ELSE 0 END), 0) AS revenue
+				COALESCE(SUM(CASE WHEN event = 'accepted' AND order_id IS NOT NULL THEN revenue ELSE 0 END), 0) AS revenue
 			FROM {$table_name}
 			{$where}
 			GROUP BY product_id
@@ -407,7 +410,7 @@ class BEWIA_AI_Upsell_Analytics {
 				SUM(CASE WHEN event = 'accepted' THEN 1 ELSE 0 END) AS accepted,
 				SUM(CASE WHEN event = 'dismissed' THEN 1 ELSE 0 END) AS dismissed,
 				SUM(CASE WHEN event = 'failed' THEN 1 ELSE 0 END) AS failed,
-				COALESCE(SUM(CASE WHEN event = 'accepted' THEN revenue ELSE 0 END), 0) AS revenue
+				COALESCE(SUM(CASE WHEN event = 'accepted' AND order_id IS NOT NULL THEN revenue ELSE 0 END), 0) AS revenue
 			FROM {$table_name}
 			{$where}
 			GROUP BY {$dimension}
@@ -484,7 +487,7 @@ class BEWIA_AI_Upsell_Analytics {
 		$total_accepted      = isset( $summary['accepted'] ) ? absint( $summary['accepted'] ) : 0;
 		$total_dismissed     = isset( $summary['dismissed'] ) ? absint( $summary['dismissed'] ) : 0;
 		$acceptance_rate     = $total_shown > 0 ? round( ( $total_accepted / $total_shown ) * 100, 2 ) : 0;
-		$estimated_revenue   = isset( $summary['revenue'] ) ? (float) $summary['revenue'] : 0.0;
+		$confirmed_revenue   = isset( $summary['revenue'] ) ? (float) $summary['revenue'] : 0.0;
 		$saved_settings      = self::get_saved_settings();
 		?>
 		<div class="wrap">
@@ -628,8 +631,8 @@ class BEWIA_AI_Upsell_Analytics {
 						<td><?php echo esc_html( number_format_i18n( $acceptance_rate, 2 ) ); ?>%</td>
 					</tr>
 					<tr>
-						<td><strong><?php echo esc_html__( 'Estimated upsell revenue', 'bew-extras' ); ?></strong></td>
-						<td><?php echo esc_html( wp_strip_all_tags( wc_price( $estimated_revenue ) ) ); ?></td>
+						<td><strong><?php echo esc_html__( 'Confirmed upsell revenue', 'bew-extras' ); ?></strong></td>
+						<td><?php echo esc_html( wp_strip_all_tags( wc_price( $confirmed_revenue ) ) ); ?></td>
 					</tr>
 				</tbody>
 			</table>
@@ -854,8 +857,10 @@ class BEWIA_AI_Upsell_Analytics {
 
 	public static function normalize_offer_identity( $identity ) {
 		$identity = is_array( $identity ) ? $identity : array();
-		return array( 'product_id' => absint( isset( $identity['product_id'] ) ? $identity['product_id'] : 0 ), 'mode' => sanitize_key( isset( $identity['mode'] ) ? $identity['mode'] : '' ), 'provider_source' => sanitize_key( isset( $identity['provider_source'] ) ? $identity['provider_source'] : '' ), 'campaign_key' => sanitize_key( isset( $identity['campaign_key'] ) ? $identity['campaign_key'] : '' ), 'variant_id' => sanitize_key( isset( $identity['variant_id'] ) ? $identity['variant_id'] : '' ), 'confidence' => isset( $identity['confidence'] ) ? max( 0, min( 1, (float) $identity['confidence'] ) ) : null );
+		return array( 'product_id' => absint( isset( $identity['product_id'] ) ? $identity['product_id'] : 0 ), 'mode' => sanitize_key( isset( $identity['mode'] ) ? $identity['mode'] : '' ), 'provider_source' => sanitize_key( isset( $identity['provider_source'] ) ? $identity['provider_source'] : '' ), 'campaign_key' => sanitize_key( isset( $identity['campaign_key'] ) ? $identity['campaign_key'] : '' ), 'variant_id' => sanitize_key( isset( $identity['variant_id'] ) ? $identity['variant_id'] : '' ), 'session_id' => sanitize_text_field( isset( $identity['session_id'] ) ? $identity['session_id'] : '' ), 'offer_id' => sanitize_key( isset( $identity['offer_id'] ) ? $identity['offer_id'] : '' ), 'confidence' => isset( $identity['confidence'] ) ? max( 0, min( 1, (float) $identity['confidence'] ) ) : null );
 	}
+	public static function build_attribution_match( $identity ) { $identity = self::normalize_offer_identity( $identity ); return $identity['session_id'] . '|' . $identity['campaign_key'] . '|' . $identity['variant_id'] . '|' . $identity['offer_id']; }
+	public static function is_confirmed_revenue_event( $row ) { return is_array( $row ) && 'accepted' === ( isset( $row['event'] ) ? $row['event'] : '' ) && ! empty( $row['order_id'] ) && null !== $row['revenue']; }
 
 	public static function is_confirmable_order_status( $status ) { return in_array( sanitize_key( $status ), array( 'processing', 'completed' ), true ); }
 
@@ -890,8 +895,7 @@ class BEWIA_AI_Upsell_Analytics {
 
 	private function update_confirmed_revenue( $order_id, $identity, $revenue ) {
 		global $wpdb; if ( ! self::ensure_table() ) { return false; }
-		$where = array( 'event' => 'accepted', 'product_id' => $identity['product_id'], 'order_id' => 0 );
-		$row = $wpdb->get_row( $wpdb->prepare( "SELECT id FROM " . self::get_table_name() . " WHERE event=%s AND product_id=%d AND order_id IS NULL ORDER BY id DESC LIMIT 1", 'accepted', $identity['product_id'] ), ARRAY_A );
+		$row = $wpdb->get_row( $wpdb->prepare( "SELECT id FROM " . self::get_table_name() . " WHERE event=%s AND product_id=%d AND session_id=%s AND campaign_key=%s AND variant_id=%s AND offer_id=%s AND order_id IS NULL ORDER BY id DESC LIMIT 1", 'accepted', $identity['product_id'], $identity['session_id'], $identity['campaign_key'], $identity['variant_id'], $identity['offer_id'] ), ARRAY_A );
 		if ( empty( $row ) ) { return false; }
 		return false !== $wpdb->update( self::get_table_name(), array( 'revenue' => round( max( 0, $revenue ), 2 ), 'order_id' => absint( $order_id ) ), array( 'id' => absint( $row['id'] ) ), array( '%f', '%d' ), array( '%d' ) );
 	}
