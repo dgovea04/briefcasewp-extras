@@ -33,7 +33,7 @@ class BEWIA_AI_Upsell_Ajax {
 		$settings = $this->bewia_get_settings_from_post();
 		$settings['suppressed_product_ids'] = array_values( array_unique( array_merge( $settings['suppressed_product_ids'], $this->bewia_get_suppressed_product_ids() ) ) );
 		$engine   = new BEWIA_AI_Upsell_Engine();
-		$product  = $engine->get_best_upsell( $settings );
+		$product  = $engine->get_best_upsell( $settings, $this->bewia_get_frontend_signals_from_post() );
 
 		if ( ! $product ) {
 			wp_send_json_error(
@@ -211,7 +211,16 @@ class BEWIA_AI_Upsell_Ajax {
 		return BEWIA_AI_Upsell_Engine::normalize_settings( $raw_settings );
 	}
 
+	private function bewia_get_frontend_signals_from_post() {
+		return array(
+			'scroll_depth'         => isset( $_POST['scroll_depth'] ) ? wp_unslash( $_POST['scroll_depth'] ) : null,
+			'checkout_started_at' => isset( $_POST['checkout_started_at'] ) ? wp_unslash( $_POST['checkout_started_at'] ) : null,
+		);
+	}
+
 	private function bewia_send_rotated_response( $settings, $message = '', $status_code = 200 ) {
+
+
 		if ( ! class_exists( 'WooCommerce' ) || ! function_exists( 'wc_get_product' ) ) {
 			wp_send_json_error(
 				array(

@@ -72,13 +72,20 @@ class BEWIA_AI_Upsell_Engine {
 		return $normalized;
 	}
 
-	public function get_cart_context() {
+	public function get_cart_context( $frontend_signals = array(), $current_timestamp = null ) {
+		$current_timestamp = null === $current_timestamp ? time() : absint( $current_timestamp );
+		$frontend_signals  = self::normalize_frontend_signals( $frontend_signals, $current_timestamp );
 		$context = array(
-			'cart_total'    => 0.0,
-			'product_ids'   => array(),
-			'category_ids'  => array(),
-			'is_logged_in'  => is_user_logged_in(),
-			'device_type'   => wp_is_mobile() ? 'mobile' : 'desktop',
+			'cart_total'               => 0.0,
+			'product_ids'              => array(),
+			'category_ids'             => array(),
+			'is_logged_in'             => is_user_logged_in(),
+			'customer_type'            => is_user_logged_in() ? 'new' : 'guest',
+			'device_type'              => wp_is_mobile() ? 'mobile' : 'desktop',
+			'coupon_codes'             => array(),
+			'checkout_elapsed_seconds' => 0,
+			'location_country'         => '',
+			'scroll_depth'             => $frontend_signals['scroll_depth'],
 		);
 
 		if ( ! class_exists( 'WooCommerce' ) || ! function_exists( 'WC' ) ) {
@@ -94,6 +101,24 @@ class BEWIA_AI_Upsell_Engine {
 		$context['cart_total'] = (float) $wc->cart->get_total( 'edit' );
 		$cart_items            = $wc->cart->get_cart();
 		$category_ids          = array();
+
+		if ( method_exists( $wc->cart, 'get_applied_coupons' ) ) {
+			$context['coupon_codes'] = self::normalize_coupon_codes( $wc->cart->get_applied_coupons() );
+		}
+
+		if ( ! empty( $wc->customer ) && is_object( $wc->customer ) && method_exists( $wc->customer, 'get_billing_country' ) ) {
+			$context['location_country'] = self::normalize_country_code( $wc->customer->get_billing_country() );
+		}
+
+		if ( $context['is_logged_in'] && function_exists( 'get_current_user_id' ) && function_exists( 'wc_get_customer_order_count' ) ) {
+			$context['customer_type'] = wc_get_customer_order_count( get_current_user_id() ) > 0 ? 'returning' : 'new';
+		}
+
+		$checkout_started_at = self::get_checkout_started_at( $wc, $frontend_signals['checkout_started_at'], $current_timestamp );
+
+		if ( $checkout_started_at > 0 ) {
+			$context['checkout_elapsed_seconds'] = max( 0, $current_timestamp - $checkout_started_at );
+		}
 
 		if ( empty( $cart_items ) || ! is_array( $cart_items ) ) {
 			return $context;
@@ -125,16 +150,47 @@ class BEWIA_AI_Upsell_Engine {
 		return $context;
 	}
 
-	public function get_best_upsell( $settings = array() ) {
+	public function get_best_upsell( $settings = array(), $frontend_signals = array() ) {
 		if ( ! class_exists( 'WooCommerce' ) || ! function_exists( 'wc_get_product' ) ) {
 			return null;
 		}
 
 		$settings      = self::normalize_settings( $settings );
-		$context       = $this->get_cart_context();
+		$context       = $this->get_cart_context( $frontend_signals );
 		$products      = $this->get_recommendations( 1, $settings, $context );
 		return ! empty( $products ) ? $products[0] : null;
 	}
+
+	public static function normalize_frontend_signals( $signals, $current_timestamp = null ) {
+		$current_timestamp = null === $current_timestamp ? time() : absint( $current_timestamp );
+		$normalized        = array(
+			'scroll_depth'         => 0,
+			'checkout_started_at' => 0,
+		);
+
+		if ( ! is_array( $signals ) ) {
+			return $normalized;
+		}
+
+		if ( isset( $signals['scroll_depth'] ) && is_numeric( $signals['scroll_depth'] ) ) {
+			$scroll_depth = (int) $signals['scroll_depth'];
+
+			if ( $scroll_depth >= 0 && $scroll_depth <= 100 ) {
+				$normalized['scroll_depth'] = $scroll_depth;
+			}
+		}
+
+		if ( isset( $signals['checkout_started_at'] ) && is_numeric( $signals['checkout_started_at'] ) ) {
+			$checkout_started_at = (int) $signals['checkout_started_at'];
+
+			if ( $checkout_started_at > 0 && $checkout_started_at <= $current_timestamp && $checkout_started_at >= ( $current_timestamp - DAY_IN_SECONDS ) ) {
+				$normalized['checkout_started_at'] = $checkout_started_at;
+			}
+		}
+
+		return $normalized;
+	}
+
 
 	public function score_product( $product_id, $context, $settings ) {
 		$product_id = absint( $product_id );
@@ -462,5 +518,44 @@ class BEWIA_AI_Upsell_Engine {
 
 			$candidate_map[ $id ] += (int) $score;
 		}
+	}
+	private static function normalize_coupon_codes( $coupon_codes ) {
+		if ( ! is_array( $coupon_codes ) ) {
+			return array();
+		}
+
+		return array_values( array_unique( array_filter( array_map( 'sanitize_key', $coupon_codes ) ) ) );
+	}
+
+	private static function normalize_country_code( $country ) {
+		$country = strtoupper( sanitize_key( (string) $country ) );
+
+		return preg_match( '/^[A-Z]{2}$/', $country ) ? $country : '';
+	}
+
+	private static function get_checkout_started_at( $wc, $frontend_checkout_started_at, $current_timestamp ) {
+		$checkout_started_at = 0;
+
+		if ( ! empty( $wc->session ) && is_object( $wc->session ) && method_exists( $wc->session, 'get' ) ) {
+			$session_value = $wc->session->get( 'bewia_checkout_started_at', 0 );
+
+			if ( is_numeric( $session_value ) ) {
+				$session_value = (int) $session_value;
+
+				if ( $session_value > 0 && $session_value <= $current_timestamp && $session_value >= ( $current_timestamp - DAY_IN_SECONDS ) ) {
+					$checkout_started_at = $session_value;
+				}
+			}
+		}
+
+		if ( $checkout_started_at <= 0 && $frontend_checkout_started_at > 0 ) {
+			$checkout_started_at = $frontend_checkout_started_at;
+
+			if ( ! empty( $wc->session ) && is_object( $wc->session ) && method_exists( $wc->session, 'set' ) ) {
+				$wc->session->set( 'bewia_checkout_started_at', $checkout_started_at );
+			}
+		}
+
+		return $checkout_started_at;
 	}
 }
