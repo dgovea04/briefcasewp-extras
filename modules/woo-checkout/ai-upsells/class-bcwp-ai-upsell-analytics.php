@@ -60,7 +60,8 @@ class BEWIA_AI_Upsell_Analytics {
 		$table_exists            = self::table_exists();
 		$provider_column_exists  = $table_exists ? self::column_exists( 'provider_source' ) : false;
 
-		if ( $table_exists && $provider_column_exists ) {
+		$campaign_column_exists  = $table_exists ? self::column_exists( 'campaign_key' ) : false;
+		if ( $table_exists && $provider_column_exists && $campaign_column_exists ) {
 			return true;
 		}
 
@@ -104,6 +105,8 @@ class BEWIA_AI_Upsell_Analytics {
 			layout varchar(50) NOT NULL DEFAULT '',
 			mode varchar(50) NOT NULL DEFAULT '',
 			provider_source varchar(50) NOT NULL DEFAULT '',
+			campaign_key varchar(100) NOT NULL DEFAULT '',
+			variant_id varchar(100) NOT NULL DEFAULT '',
 			event varchar(20) NOT NULL DEFAULT '',
 			revenue decimal(18,2) NULL,
 			PRIMARY KEY  (id),
@@ -159,6 +162,8 @@ class BEWIA_AI_Upsell_Analytics {
 			'layout'     => '',
 			'mode'       => '',
 			'provider_source' => '',
+			'campaign_key' => '',
+			'variant_id' => '',
 			'revenue'    => null,
 		);
 
@@ -178,11 +183,13 @@ class BEWIA_AI_Upsell_Analytics {
 			'layout'     => sanitize_text_field( (string) $data['layout'] ),
 			'mode'       => sanitize_text_field( (string) $data['mode'] ),
 			'provider_source' => sanitize_text_field( (string) $data['provider_source'] ),
+			'campaign_key' => sanitize_key( (string) $data['campaign_key'] ),
+			'variant_id' => sanitize_key( (string) $data['variant_id'] ),
 			'event'      => $event,
 			'revenue'    => null === $data['revenue'] ? null : round( (float) $data['revenue'], 2 ),
 		);
 
-		$formats = array( '%s', '%s', '%d', '%d', '%f', '%s', '%s', '%s', '%s', '%f' );
+		$formats = array( '%s', '%s', '%d', '%d', '%f', '%s', '%s', '%s', '%s', '%s', '%s', '%f' );
 
 		if ( null === $insert['user_id'] ) {
 			$insert['user_id'] = null;

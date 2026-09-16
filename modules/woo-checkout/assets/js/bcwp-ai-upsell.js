@@ -231,6 +231,10 @@ jQuery(function ($) {
 					settings.provider_source = response.data.provider_source;
 					storeSettings($widget, settings);
 				}
+				if (response.data.variant_id) {
+					settings.variant_id = response.data.variant_id;
+					storeSettings($widget, settings);
+				}
 				renderProduct($widget, response.data.product);
 				setStatus($widget, '', false);
 				$widget.removeClass('bewia-ai-upsell-loading');

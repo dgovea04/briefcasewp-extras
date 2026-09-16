@@ -110,6 +110,9 @@ class BEWIA_BCWP_Elementor_AI_Upsell extends Base_Widget {
 			)
 		);
 
+		$this->add_control( 'campaign_key', array( 'label' => __( 'Campaign Key', 'bew-extras' ), 'type' => Controls_Manager::TEXT, 'default' => '' ) );
+		$this->add_control( 'campaign_variants', array( 'label' => __( 'Campaign Variants (JSON)', 'bew-extras' ), 'type' => Controls_Manager::TEXTAREA, 'default' => '', 'description' => __( 'JSON array with variant_id, product_ids, layout and copy.', 'bew-extras' ) ) );
+
 		$this->end_controls_section();
 
 		$this->start_controls_section(
@@ -468,6 +471,8 @@ class BEWIA_BCWP_Elementor_AI_Upsell extends Base_Widget {
 			'fallback_title'             => ! empty( $settings['fallback_title'] ) ? sanitize_text_field( $settings['fallback_title'] ) : '',
 			'fallback_description'       => ! empty( $settings['fallback_description'] ) ? sanitize_textarea_field( $settings['fallback_description'] ) : '',
 			'button_text'                => ! empty( $settings['button_text'] ) ? sanitize_text_field( $settings['button_text'] ) : '',
+			'campaign_key'               => ! empty( $settings['campaign_key'] ) ? sanitize_key( $settings['campaign_key'] ) : '',
+			'variants'                   => ! empty( $settings['campaign_variants'] ) ? json_decode( $settings['campaign_variants'], true ) : array(),
 		);
 		$widget_settings = \BriefcasewpExtras\Modules\WooCheckout\AIUpsells\BEWIA_AI_Upsell_Engine::normalize_settings( $widget_settings );
 

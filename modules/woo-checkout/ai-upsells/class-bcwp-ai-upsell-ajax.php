@@ -54,6 +54,8 @@ class BEWIA_AI_Upsell_Ajax {
 			array(
 				'product'         => $engine->format_upsell_response( $product ),
 				'provider_source' => $engine->get_last_provider_source(),
+				'campaign_key'    => $settings['campaign_key'],
+				'variant_id'      => isset( $settings['variant_id'] ) ? $settings['variant_id'] : '',
 			)
 		);
 	}
@@ -208,7 +210,9 @@ class BEWIA_AI_Upsell_Ajax {
 			$raw_settings = array();
 		}
 
-		return BEWIA_AI_Upsell_Engine::normalize_settings( $raw_settings );
+		$settings = BEWIA_AI_Upsell_Engine::normalize_settings( $raw_settings );
+		$variant = BEWIA_AI_Upsell_Experiments::assign_variant( $settings['campaign_key'], '', $settings['variants'] );
+		return $this->bewia_apply_variant( $settings, $variant );
 	}
 
 	private function bewia_get_frontend_signals_from_post() {
@@ -260,8 +264,19 @@ class BEWIA_AI_Upsell_Ajax {
 			'layout'     => isset( $settings['layout'] ) ? sanitize_text_field( (string) $settings['layout'] ) : '',
 			'mode'       => isset( $settings['mode'] ) ? sanitize_text_field( (string) $settings['mode'] ) : '',
 			'provider_source' => isset( $settings['provider_source'] ) ? sanitize_text_field( (string) $settings['provider_source'] ) : '',
+			'campaign_key' => isset( $settings['campaign_key'] ) ? sanitize_key( $settings['campaign_key'] ) : '',
+			'variant_id' => isset( $settings['variant_id'] ) ? sanitize_key( $settings['variant_id'] ) : '',
 			'revenue'    => null === $revenue ? null : (float) $revenue,
 		);
+	}
+
+	private function bewia_apply_variant( $settings, $variant ) {
+		if ( empty( $variant ) ) { return $settings; }
+		$settings['variant_id'] = $variant['variant_id'];
+		if ( ! empty( $variant['product_ids'] ) ) { $settings['candidate_product_ids'] = $variant['product_ids']; }
+		$settings['layout'] = $variant['layout'];
+		foreach ( array( 'title' => 'fallback_title', 'description' => 'fallback_description', 'cta' => 'button_text' ) as $copy_key => $setting_key ) { if ( isset( $variant['copy'][ $copy_key ] ) ) { $settings[ $setting_key ] = $variant['copy'][ $copy_key ]; } }
+		return BEWIA_AI_Upsell_Engine::normalize_settings( $settings );
 	}
 
 	private function bewia_log_failed_event( $product_id = 0, $settings = array() ) {

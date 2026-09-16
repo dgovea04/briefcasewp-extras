@@ -39,6 +39,8 @@ class BEWIA_AI_Upsell_Engine {
 			'fallback_description'        => isset( $settings['fallback_description'] ) ? sanitize_textarea_field( (string) $settings['fallback_description'] ) : '',
 			'button_text'                 => isset( $settings['button_text'] ) ? sanitize_text_field( (string) $settings['button_text'] ) : '',
 			'provider_source'             => isset( $settings['provider_source'] ) ? sanitize_key( (string) $settings['provider_source'] ) : '',
+			'campaign_key'                => isset( $settings['campaign_key'] ) ? sanitize_key( (string) $settings['campaign_key'] ) : '',
+			'variants'                    => isset( $settings['variants'] ) && is_array( $settings['variants'] ) ? $settings['variants'] : array(),
 		);
 
 		$candidate_ids = array();
