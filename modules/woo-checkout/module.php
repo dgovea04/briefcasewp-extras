@@ -584,6 +584,7 @@ class Module extends Module_Base {
 		require_once BEW_EXTRAS_PATH . 'modules/woo-checkout/classes/bew-cst.php';				
 		require_once BEW_EXTRAS_PATH . 'modules/woo-checkout/ai-upsells/interface-bcwp-ai-upsell-provider.php';
 		require_once BEW_EXTRAS_PATH . 'modules/woo-checkout/ai-upsells/class-bcwp-ai-upsell-ai-provider.php';
+		require_once BEW_EXTRAS_PATH . 'modules/woo-checkout/ai-upsells/class-bcwp-ai-upsell-copy-generator.php';
 		require_once BEW_EXTRAS_PATH . 'modules/woo-checkout/ai-upsells/class-bcwp-ai-upsell-hybrid-provider.php';
 		require_once BEW_EXTRAS_PATH . 'modules/woo-checkout/ai-upsells/class-bcwp-ai-upsell-rule-provider.php';
 		require_once BEW_EXTRAS_PATH . 'modules/woo-checkout/ai-upsells/class-bcwp-ai-upsell-engine.php';

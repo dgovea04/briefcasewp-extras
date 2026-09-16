@@ -316,6 +316,12 @@ class BEWIA_AI_Upsell_Engine {
 		return array();
 	}
 
+	public function generate_upsell_copy( $product, $settings = array(), $context = null ) {
+		$context = is_array( $context ) ? $context : $this->get_cart_context();
+		$generator = new BEWIA_AI_Upsell_Copy_Generator();
+		return $generator->generate( $product, $context, self::normalize_settings( $settings ) );
+	}
+
 	protected function hydrate_provider_results( $results ) {
 		$products = array();
 		foreach ( (array) $results as $result ) {
